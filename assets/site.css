@@ -58,6 +58,15 @@
   --on-dark:var(--ink);
   --on-dark-dim:var(--ink-2);
   --on-dark-faint:var(--ink-3);
+
+  /* button surfaces, so a ghost button can never end up white on white */
+  --ghost-bg:#ffffff;
+  --ghost-fg:var(--ink);
+  --ghost-line:var(--line);
+  --ghost-bg-hover:#ffffff;
+  --ghost-fg-hover:var(--green-ink);
+  --ink-btn-bg:var(--forest);
+  --ink-btn-fg:#ffffff;
 }
 
 /* Anything inside a dark surface re-points the same tokens. */
@@ -84,6 +93,13 @@
   --on-dark-dim:#B7C4B7;
   --on-dark-faint:#8D9C8F;
   --shadow:none; --shadow-lg:none;
+  --ghost-bg:transparent;
+  --ghost-fg:#ffffff;
+  --ghost-line:rgba(255,255,255,.28);
+  --ghost-bg-hover:rgba(255,255,255,.08);
+  --ghost-fg-hover:var(--green);
+  --ink-btn-bg:#ffffff;
+  --ink-btn-fg:var(--forest);
   color:var(--on-dark);
 }
 
@@ -121,6 +137,7 @@ p{margin:0 0 1.1em}
 .tiny{font-size:13px;line-height:1.55;color:var(--ink-3)}
 .mono{font-family:var(--body);font-size:14px}
 .hl{color:var(--green-ink)}
+a.hl:hover{text-decoration:underline;text-underline-offset:3px}
 
 /* ---------- layout ---------- */
 .wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gut)}
@@ -183,12 +200,10 @@ p{margin:0 0 1.1em}
 .btn:hover{transform:translateY(-1px)}
 .btn--go{background:var(--green);color:#132009;box-shadow:0 6px 18px -8px rgba(132,196,65,.8)}
 .btn--go:hover{background:#94D24E}
-.btn--ghost{border-color:var(--line);color:var(--ink);background:#fff}
-.btn--ghost:hover{border-color:var(--green-ink);color:var(--green-ink)}
-.btn--ink{background:var(--forest);color:#fff}
-.btn--ink:hover{background:var(--forest-2)}
-.dark .btn--ghost{background:transparent;border-color:var(--line-dark);color:#fff}
-.dark .btn--ghost:hover{border-color:var(--green);color:var(--green)}
+.btn--ghost{border-color:var(--ghost-line);color:var(--ghost-fg);background:var(--ghost-bg)}
+.btn--ghost:hover{border-color:currentColor;color:var(--ghost-fg-hover);background:var(--ghost-bg-hover)}
+.btn--ink{background:var(--ink-btn-bg);color:var(--ink-btn-fg)}
+.btn--ink:hover{filter:brightness(1.12)}
 .btn svg{width:13px;height:13px;flex:none}
 
 /* ---------- hero ---------- */
@@ -278,7 +293,7 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color
 .credit{font-size:11.5px;color:var(--ink-3);margin-top:9px;line-height:1.5;max-width:60ch}
 .credit a{text-decoration:underline;text-underline-offset:2px}
 .dark .credit{color:var(--on-dark-faint)}
-.band-photo{position:relative;overflow:hidden}
+.band-photo{position:relative;overflow:hidden;background:var(--forest)}
 .band-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
 .band-photo__in{position:relative;padding-block:clamp(72px,11vw,150px)}
 .band-photo::after{content:"";position:absolute;inset:0;
@@ -375,8 +390,8 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 .q:first-of-type{border-top:0;padding-top:0;margin-top:0}
 .q h4{margin-bottom:12px}
 .opts{display:flex;flex-wrap:wrap;gap:8px}
-.opt{padding:10px 17px;border:1.5px solid var(--line);border-radius:var(--r-pill);background:#fff;cursor:pointer;
-  font-size:14.5px;font-weight:650;transition:all .16s}
+.opt{padding:10px 17px;border:1.5px solid var(--ghost-line);border-radius:var(--r-pill);background:var(--ghost-bg);
+  color:var(--ghost-fg);cursor:pointer;font-size:14.5px;font-weight:650;transition:all .16s}
 .opt:hover{border-color:var(--green-ink)}
 .opt[aria-pressed="true"]{background:var(--green);color:#132009;border-color:var(--green)}
 .verdict{border:1.5px solid var(--green);background:var(--green-soft);border-radius:var(--r);padding:22px;margin-top:20px}
@@ -394,7 +409,7 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 .prose ul li{position:relative;padding-left:28px;margin-bottom:.62em;line-height:1.6;color:var(--ink-2)}
 .prose ul li::before{content:"";position:absolute;left:0;top:.66em;width:13px;height:2px;border-radius:2px;background:var(--green)}
 .prose strong{font-weight:750;color:var(--ink)}
-.prose a{color:var(--green-ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px}
+.prose a:not(.btn){color:var(--green-ink);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px}
 .note{border-left:3px solid var(--green);background:var(--green-soft);border-radius:0 var(--r-sm) var(--r-sm) 0;
   padding:16px 20px;margin:1.6em 0;font-size:15.5px;line-height:1.58;color:var(--ink)}
 .note b{display:block;font-family:var(--label);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--green-ink);margin-bottom:6px}
@@ -433,7 +448,7 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 .person__ph img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .chips{display:flex;flex-wrap:wrap;gap:7px}
 .chip{font-size:12px;font-weight:650;letter-spacing:.01em;padding:6px 13px;border-radius:var(--r-pill);
-  border:1px solid var(--line);color:var(--ink-2);background:#fff}
+  border:1px solid var(--ghost-line);color:var(--ink-2);background:var(--ghost-bg)}
 .chip--gold{border-color:rgba(190,142,54,.45);color:var(--clay-ink);background:var(--clay-soft)}
 .dark .chip{background:rgba(255,255,255,.06);border-color:var(--line-dark);color:var(--on-dark-dim)}
 
