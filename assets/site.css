@@ -69,6 +69,9 @@
   --ghost-fg-hover:var(--green-ink);
   --ink-btn-bg:var(--forest);
   --ink-btn-fg:#ffffff;
+  /* Every raised surface reads this instead of a literal white, so a dark
+     band or a dark theme flips them all without touching each component. */
+  --card:#ffffff;
 }
 
 /* Anything inside a dark surface re-points the same tokens. The class is doubled
@@ -82,6 +85,7 @@
   --line:rgba(255,255,255,.14);
   --line-2:rgba(255,255,255,.10);
   --line-strong:rgba(255,255,255,.22);
+  --card:rgba(255,255,255,.06);
   --paper:var(--forest);
   --paper-2:rgba(255,255,255,.06);
   --paper-3:rgba(255,255,255,.14);
@@ -230,7 +234,7 @@ a.hl:hover{text-decoration:underline;text-underline-offset:3px}
 .hero__dek{margin-top:24px;max-width:54ch}
 .hero__acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .hero__meta{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:28px}
-.hero__meta span{font-size:13px;font-weight:600;color:var(--ink-2);background:#fff;
+.hero__meta span{font-size:13px;font-weight:600;color:var(--ink-2);background:var(--card);
   border:1px solid var(--line-2);border-radius:var(--r-pill);padding:7px 15px}
 
 /* hero with a photo alongside */
@@ -249,7 +253,7 @@ a.hl:hover{text-decoration:underline;text-underline-offset:3px}
 .vec__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.4vw,18px)}
 @media (max-width:1000px){.vec__grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:540px){.vec__grid{grid-template-columns:1fr}}
-.vec__card{background:#fff;border:1px solid var(--line-2);border-radius:var(--r);
+.vec__card{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);
   padding:22px 20px 18px;display:flex;flex-direction:column;gap:9px;min-height:186px;
   box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s,border-color .2s}
 .vec__card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--green-line)}
@@ -267,7 +271,7 @@ a.hl:hover{text-decoration:underline;text-underline-offset:3px}
 .proof{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.2vw,16px)}
 @media (max-width:1000px){.proof{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:560px){.proof{grid-template-columns:repeat(2,1fr)}}
-.proof__i{background:#fff;border:1px solid var(--line-2);border-radius:var(--r);padding:22px 18px 18px}
+.proof__i{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);padding:22px 18px 18px}
 .proof__n{font-family:var(--label);font-size:clamp(2.5rem,4vw,3.3rem);line-height:.86;color:var(--green-ink)}
 .proof__u{font-family:var(--label);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin-top:9px}
 .proof__l{font-size:13px;line-height:1.45;color:var(--ink-2);margin-top:6px}
@@ -279,9 +283,9 @@ a.hl:hover{text-decoration:underline;text-underline-offset:3px}
 .dark .proof__s{color:var(--on-dark-faint)}
 
 /* ---------- panels / cards ---------- */
-.panel{border:1px solid var(--line-2);background:#fff;border-radius:var(--r);padding:clamp(22px,3vw,34px);box-shadow:var(--shadow)}
+.panel{border:1px solid var(--line-2);background:var(--card);border-radius:var(--r);padding:clamp(22px,3vw,34px);box-shadow:var(--shadow)}
 .dark .panel{background:rgba(255,255,255,.05);border-color:var(--line-dark);box-shadow:none}
-.card{border:1px solid var(--line-2);background:#fff;border-radius:var(--r);padding:22px 20px;
+.card{border:1px solid var(--line-2);background:var(--card);border-radius:var(--r);padding:22px 20px;
   display:flex;flex-direction:column;gap:9px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s,border-color .2s}
 a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--green-line)}
 .card h3{font-size:1.14rem}
@@ -312,7 +316,7 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color
 .pcards--2{grid-template-columns:repeat(2,1fr)}
 @media (max-width:900px){.pcards--3{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.pcards--3,.pcards--2{grid-template-columns:1fr}}
-.pcard{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line-2);
+.pcard{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line-2);
   border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);
   transition:transform .22s cubic-bezier(.22,1,.36,1),box-shadow .22s,border-color .22s}
 .pcard:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--green-line)}
@@ -380,7 +384,7 @@ a.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color
 .band-photo__in{z-index:1}
 
 /* ---------- team strip ---------- */
-.teamphoto{border-radius:var(--r-lg);overflow:hidden;background:#fff;border:1px solid var(--line-2);box-shadow:var(--shadow-lg)}
+.teamphoto{border-radius:var(--r-lg);overflow:hidden;background:var(--card);border:1px solid var(--line-2);box-shadow:var(--shadow-lg)}
 .teamphoto picture,.teamphoto img{display:block;width:100%;height:auto}
 .roster{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:clamp(14px,1.8vw,22px)}
 .agent{display:flex;flex-direction:column;gap:10px;text-align:left}
@@ -398,7 +402,7 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 .exits{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,1.4vw,18px)}
 @media (max-width:1000px){.exits{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.exits{grid-template-columns:1fr}}
-.exit{background:#fff;border:1px solid var(--line-2);border-radius:var(--r);padding:24px 22px;
+.exit{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);padding:24px 22px;
   display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow)}
 .dark .exit{background:rgba(255,255,255,.05);border-color:var(--line-dark);box-shadow:none}
 .exit__n{font-family:var(--label);font-size:2.1rem;line-height:.82;color:var(--green-ink);flex:none;
@@ -431,7 +435,7 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 @media (max-width:1100px){.rail--5{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:980px){.rail,.rail--5{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:560px){.rail,.rail--5{grid-template-columns:1fr}}
-.step{background:#fff;border:1px solid var(--line-2);border-radius:var(--r);padding:22px 20px;
+.step{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r);padding:22px 20px;
   display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
 .dark .step{background:rgba(255,255,255,.05);border-color:var(--line-dark);box-shadow:none}
 .step__k{font-family:var(--label);font-size:13px;letter-spacing:.16em;color:var(--green-ink)}
@@ -441,7 +445,7 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 .dark .step p{color:var(--on-dark-dim)}
 
 /* ---------- data ---------- */
-.data{border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden;background:#fff;box-shadow:var(--shadow)}
+.data{border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
 .dark .data{background:rgba(255,255,255,.05);border-color:var(--line-dark);box-shadow:none}
 .data__row{display:grid;grid-template-columns:minmax(0,1.25fr) auto minmax(0,1.5fr);gap:16px;align-items:baseline;
   padding:15px 20px;border-bottom:1px solid var(--line-2)}
@@ -455,7 +459,7 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 @media (max-width:640px){.data__row{grid-template-columns:1fr auto}.data__n{grid-column:1/-1}}
 
 /* ---------- tools ---------- */
-.tool{border:1px solid var(--line-2);background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.tool{border:1px solid var(--line-2);background:var(--card);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
 .tool__hd{padding:18px 22px;border-bottom:1px solid var(--line-2);display:flex;align-items:center;
   justify-content:space-between;gap:14px;flex-wrap:wrap;background:var(--paper-2)}
 .tool__bd{padding:22px}
@@ -504,7 +508,7 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 
 /* ---------- watch ---------- */
 .watch{display:grid;gap:10px}
-.watch div{background:#fff;border:1px solid var(--line-2);border-left:3px solid var(--clay);
+.watch div{background:var(--card);border:1px solid var(--line-2);border-left:3px solid var(--clay);
   border-radius:0 var(--r-sm) var(--r-sm) 0;padding:15px 18px;font-size:14.5px;line-height:1.52;color:var(--ink-2)}
 .dark .watch div{background:rgba(255,255,255,.05);border-color:var(--line-dark);border-left-color:var(--clay)}
 
@@ -550,7 +554,7 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 
 /* ---------- index grid ---------- */
 .index{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
-.index a{background:#fff;border:1px solid var(--line-2);border-radius:var(--r-sm);padding:14px 17px;
+.index a{background:var(--card);border:1px solid var(--line-2);border-radius:var(--r-sm);padding:14px 17px;
   font-size:14.5px;font-weight:650;display:flex;justify-content:space-between;align-items:center;gap:10px;
   transition:border-color .18s,color .18s,transform .18s}
 .index a:hover{border-color:var(--green-line);color:var(--green-ink);transform:translateY(-2px)}
@@ -602,3 +606,23 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 .skip:focus{left:8px;top:8px}
 :focus-visible{outline:2px solid var(--green-ink);outline-offset:2px}
 ::selection{background:var(--green);color:#132009}
+/* ---- the style picker ---------------------------------------------------
+   One row per option: a real screenshot of the real homepage, then the name
+   and what it is. The image is the argument, so it gets the space. */
+.picks{display:grid;gap:clamp(48px,6vw,92px);margin-top:8px}
+.pick{display:grid;gap:clamp(18px,2.6vw,30px);align-items:center}
+.pick__link{display:block;border-radius:var(--r);overflow:hidden;background:var(--paper-2);
+  border:1px solid var(--line);box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s,border-color .25s}
+.pick__link:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--line-strong)}
+/* A fixed shape per row so six options stay scannable instead of turning into
+   six full-length pages stacked on top of each other. */
+.pick__shot{aspect-ratio:3/4}
+.pick__shot picture{display:block;height:100%}
+.pick__shot img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+.pick__body{max-width:62ch}
+@media (min-width:900px){
+  /* Text left, preview right, every row the same. Alternating sides re-sizes the
+     screenshots row to row, which makes six options harder to compare, not easier. */
+  .pick{grid-template-columns:minmax(0,1fr) minmax(0,1.55fr);gap:clamp(30px,3.6vw,58px);align-items:center}
+  .pick__shot{aspect-ratio:16/10}
+}
