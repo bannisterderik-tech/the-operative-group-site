@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>APOD &amp; cap rate calculator | The Operative Group</title>
+<meta name="description" content="Build an annual property operating data sheet: gross scheduled income to net operating income, then cap rate, gross rent multiplier and cash-on-cash return..">
+<link rel="canonical" href="https://www.theoperativegroup.com/tools/apod-calculator/">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="APOD &amp; cap rate calculator | The Operative Group">
+<meta property="og:description" content="Build an annual property operating data sheet: gross scheduled income to net operating income, then cap rate, gross rent multiplier and cash-on-cash return..">
+<meta property="og:url" content="https://www.theoperativegroup.com/tools/apod-calculator/">
+<meta property="og:site_name" content="The Operative Group">
+<meta property="og:image" content="https://www.theoperativegroup.com/assets/brand/tog-lockup-color.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B0F0C">
+<link rel="icon" href="/the-operative-group-site/assets/brand/tog-arrow.png" type="image/png">
+<link rel="apple-touch-icon" href="/the-operative-group-site/assets/brand/tog-arrow.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/the-operative-group-site/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"RealEstateAgent","@id":"https://www.theoperativegroup.com/#org","name":"The Operative Group","url":"https://www.theoperativegroup.com/","logo":"https://www.theoperativegroup.com/assets/brand/tog-lockup-color.png","image":"https://www.theoperativegroup.com/assets/brand/tog-lockup-color.png","telephone":"+14582090163","email":"dan@theoperativegroup.com","description":"Help every family in Lane County make wise real estate decisions, with fiduciary representation, transparent and timely communication, and superior negotiation.","parentOrganization":{"@type":"Organization","name":"REAL Broker"},"address":{"@type":"PostalAddress","addressLocality":"Eugene","addressRegion":"OR","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":44.0521,"longitude":-123.0868},"areaServed":[{"@type":"State","name":"Oregon"},{"@type":"AdministrativeArea","name":"Lane County, Oregon"},{"@type":"City","name":"Eugene, Oregon"},{"@type":"City","name":"Springfield, Oregon"},{"@type":"City","name":"Coburg, Oregon"},{"@type":"City","name":"Cottage Grove, Oregon"},{"@type":"City","name":"Creswell, Oregon"},{"@type":"City","name":"Junction City, Oregon"},{"@type":"City","name":"Veneta, Oregon"},{"@type":"City","name":"Florence, Oregon"},{"@type":"City","name":"Dunes City, Oregon"},{"@type":"City","name":"Oakridge, Oregon"},{"@type":"City","name":"Westfir, Oregon"},{"@type":"City","name":"Lowell, Oregon"}],"sameAs":["https://www.youtube.com/channel/UClTuSJVcaVYJVz20G2ooPhw"],"employee":[{"@type":"RealEstateAgent","name":"Daniel Gandee","jobTitle":"Owner · Team Leader · Partner","telephone":"+14582090163","url":"https://www.theoperativegroup.com/agents/dan-gandee/","email":"dan@theoperativegroup.com","hasCredential":[{"@type":"EducationalOccupationalCredential","name":"Certified Real Estate Negotiation Expert","alternateName":"RENE"},{"@type":"EducationalOccupationalCredential","name":"Certified Probate Real Estate Specialist","alternateName":"CPRES"}]},{"@type":"RealEstateAgent","name":"Edward Zulyevic","jobTitle":"Co-Founder · Partner · Acquisitions Manager","telephone":"+14582219688","url":"https://www.theoperativegroup.com/agents/ed-zulyevic/","email":"ed@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Brett Herring","jobTitle":"REALTOR®","telephone":"+15419689422","url":"https://www.theoperativegroup.com/agents/brett-herring/","email":"brett@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"George Winters","jobTitle":"REALTOR®","telephone":"+15418708378","url":"https://www.theoperativegroup.com/agents/george-winters/","email":"george@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Larissa Mayfield","jobTitle":"REALTOR®","telephone":"+15417847745","url":"https://www.theoperativegroup.com/agents/larissa-mayfield/","email":"larissa@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Mason Drews","jobTitle":"REALTOR®","telephone":"+15413578683","url":"https://www.theoperativegroup.com/agents/mason-drews/","email":"mason@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Shakir Evans","jobTitle":"REALTOR®","telephone":"+13153839493","url":"https://www.theoperativegroup.com/agents/shakir-evans/","email":"shakir@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Joshua Fowler","jobTitle":"REALTOR®","telephone":"+15415569779","url":"https://www.theoperativegroup.com/agents/joshua-fowler/","email":"joshua@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Daniella Gentry","jobTitle":"REALTOR®","telephone":"+15413219093","url":"https://www.theoperativegroup.com/agents/daniella-gentry/","email":"daniella@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Seth Cory","jobTitle":"REALTOR®","telephone":"+19713728333","url":"https://www.theoperativegroup.com/agents/seth-cory/","email":"seth@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Aidan Keuter","jobTitle":"REALTOR®","telephone":"+15419681594","url":"https://www.theoperativegroup.com/agents/aidan-keuter/","email":"aidan@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Kimberly Karlovich","jobTitle":"REALTOR®","telephone":"+15416439509","url":"https://www.theoperativegroup.com/agents/kimberly-karlovich/","email":"kimberly@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Logan Porter","jobTitle":"REALTOR®","telephone":"+15096306103","url":"https://www.theoperativegroup.com/agents/logan-porter/","email":"logan@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Michael Robinson","jobTitle":"REALTOR®","telephone":"+18059051297","url":"https://www.theoperativegroup.com/agents/mike-robinson/","email":"miker@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Derik Bannister","jobTitle":"REALTOR®","telephone":"+15307367085","url":"https://www.theoperativegroup.com/agents/derik-bannister/","email":"derik@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Matthew McCormick","jobTitle":"REALTOR®","telephone":"+15033398223","url":"https://www.theoperativegroup.com/agents/matthew-mccormick/","email":"matthewm@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Roberto Flores","jobTitle":"REALTOR®","telephone":"+15302927177","url":"https://www.theoperativegroup.com/agents/robert-flores/","email":"robert@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Jacob Eden","jobTitle":"REALTOR®","telephone":"+15419398209","url":"https://www.theoperativegroup.com/agents/jacob-eden/","email":"jacob@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Veselina Karakoleva","jobTitle":"REALTOR®","telephone":"+15415203428","url":"https://www.theoperativegroup.com/agents/veselina-karakoleva/","email":"veselina@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Cindi Mills","jobTitle":"REALTOR®","telephone":"+15416701344","url":"https://www.theoperativegroup.com/agents/cindi-mills/","email":"cindi@theoperativegroup.com"},{"@type":"RealEstateAgent","name":"Jennifer Copeland","jobTitle":"REALTOR®","telephone":"+15415794310","url":"https://www.theoperativegroup.com/agents/jennifer-copeland/","email":"jennifer@theoperativegroup.com"}],"founder":[{"@type":"Person","name":"Daniel Gandee","jobTitle":"Owner · Team Leader · Partner"},{"@type":"Person","name":"Edward Zulyevic","jobTitle":"Co-Founder · Partner · Acquisitions Manager"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.theoperativegroup.com/"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://www.theoperativegroup.com/tools/"},{"@type":"ListItem","position":3,"name":"APOD & cap rate calculator"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"APOD & cap rate calculator","description":"Build an annual property operating data sheet: gross scheduled income to net operating income, then cap rate, gross rent multiplier and cash-on-cash return. The four numbers The Operative Group runs on every deal.","mainEntityOfPage":"https://www.theoperativegroup.com/tools/apod-calculator/","author":{"@id":"https://www.theoperativegroup.com/#org"},"publisher":{"@id":"https://www.theoperativegroup.com/#org"},"dateModified":"2026-09-23"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why are the default expense assumptions so high?","acceptedAnswer":{"@type":"Answer","text":"Because the ones on listing flyers are usually too low. Vacancy, management and capital reserves are real costs whether or not you pay them to somebody else. A deal that only works with them removed does not work."}},{"@type":"Question","name":"Should I include management if I self-manage?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your time has a price, and if you ever stop self-managing the expense appears. Leaving it out makes a bad deal look like a good one."}},{"@type":"Question","name":"What cap rate is good in Lane County?","acceptedAnswer":{"@type":"Answer","text":"There is no single right answer — it depends on the asset class, the vintage, and what you are being paid to take on. The useful comparison is against other deals you can actually buy right now, and against what your money does elsewhere."}},{"@type":"Question","name":"Does this account for the Oregon rent cap?","acceptedAnswer":{"@type":"Answer","text":"Not directly — it values the property as it operates today. When you model rent growth, remember Oregon caps most long-term residential increases at 9.5% for 2026 under ORS 90.323, and 6% for manufactured home facilities with more than 30 spaces."}}]}</script>
+</head>
+<body>
+<div class="prog" id="prog"></div>
+<a class="skip" href="#main">Skip to content</a><header class="hdr">
+  <div class="hdr__in">
+    <a class="hdr__logo" href="/the-operative-group-site/" aria-label="The Operative Group — home">
+      <img src="/the-operative-group-site/assets/brand/tog-lockup-color.png" alt="The Operative Group" width="81" height="30">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="/the-operative-group-site/sell/">Sell</a><a href="/the-operative-group-site/buy/">Buy</a><a href="/the-operative-group-site/invest/">Invest</a><a href="/the-operative-group-site/probate/">Probate</a><a href="/the-operative-group-site/relocate/">Relocate</a><a href="/the-operative-group-site/downsize/">Downsize</a><a href="/the-operative-group-site/oregon/">Oregon</a><a href="/the-operative-group-site/tools/" aria-current="page">Tools</a><a href="/the-operative-group-site/about/">About</a><a href="/the-operative-group-site/join/">Join</a>
+    </nav>
+    <a class="hdr__tel" href="tel:+14582090163">458.209.0163</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mnav" id="mnav">
+  <div class="mnav__in">
+    <a href="/the-operative-group-site/sell/">Sell<span>sell</span></a><a href="/the-operative-group-site/buy/">Buy<span>buy</span></a><a href="/the-operative-group-site/invest/">Invest<span>invest</span></a><a href="/the-operative-group-site/probate/">Probate<span>probate</span></a><a href="/the-operative-group-site/relocate/">Relocate<span>relocate</span></a><a href="/the-operative-group-site/downsize/">Downsize<span>downsize</span></a><a href="/the-operative-group-site/oregon/">Oregon<span>oregon</span></a><a href="/the-operative-group-site/tools/">Tools<span>tools</span></a><a href="/the-operative-group-site/about/">About<span>about</span></a><a href="/the-operative-group-site/join/">Join<span>join</span></a>
+    <a href="tel:+14582090163">458.209.0163<span>call</span></a>
+  </div>
+</div><main id="main"><nav class="crumb wrap" aria-label="Breadcrumb"><a href="/the-operative-group-site/">Home</a><i>/</i><a href="/the-operative-group-site/tools/">Tools</a><i>/</i><span>APOD &amp; cap rate calculator</span></nav>
+     <section class="sec sec--tight">
+       <div class="wrap">
+         <span class="lbl">Investing · Free tool</span>
+         <h1 style="margin:20px 0 0;max-width:17ch;font-size:clamp(2rem,4.6vw,3.2rem)">APOD &amp; cap rate calculator</h1>
+         <p class="dek" style="margin-top:20px;max-width:58ch">Gross scheduled income down to net operating income, then the three metrics: cap rate, gross rent multiplier, cash-on-cash. Defaults are conservative on purpose — a pro forma that omits vacancy, management and reserves is a marketing document, not an underwriting.</p>
+       </div>
+     </section>
+     <section class="sec sec--tight" style="padding-top:0">
+       <div class="wrap">
+<div class="split" style="gap:clamp(24px,3vw,40px)">
+  <div class="tool">
+    <div class="tool__hd"><span class="lbl lbl--bare" style="color:var(--on-dark-faint)">Inputs</span>
+      <button class="btn btn--ghost" type="button" id="ap-reset" style="padding:9px 16px;font-size:13px">Reset</button></div>
+    <div class="tool__bd">
+      <div class="field"><label for="ap-price">Purchase price ($)</label><input id="ap-price" type="number" step="any" value="450000" inputmode="decimal"></div>
+      <div class="field"><label for="ap-rent">Gross monthly rent, all units ($)</label><input id="ap-rent" type="number" step="any" value="3200" inputmode="decimal"><span class="hint">Scheduled rent under the current leases, not market rent</span></div>
+      <div class="field"><label for="ap-other">Other monthly income ($)</label><input id="ap-other" type="number" step="any" value="0" inputmode="decimal"><span class="hint">Laundry, storage, parking, pet rent</span></div>
+      <div class="grid g2" style="gap:14px">
+        <div class="field"><label for="ap-vac">Vacancy (%)</label><input id="ap-vac" type="number" step="any" value="6" inputmode="decimal"></div>
+        <div class="field"><label for="ap-mgmt">Management (%)</label><input id="ap-mgmt" type="number" step="any" value="8" inputmode="decimal"></div>
+      </div>
+      <div class="grid g2" style="gap:14px">
+        <div class="field"><label for="ap-maint">Maintenance (%)</label><input id="ap-maint" type="number" step="any" value="6" inputmode="decimal"></div>
+        <div class="field"><label for="ap-res">Capital reserves (%)</label><input id="ap-res" type="number" step="any" value="5" inputmode="decimal"></div>
+      </div>
+      <div class="grid g2" style="gap:14px">
+        <div class="field"><label for="ap-tax">Property taxes, annual ($)</label><input id="ap-tax" type="number" step="any" value="5400" inputmode="decimal"></div>
+        <div class="field"><label for="ap-ins">Insurance, annual ($)</label><input id="ap-ins" type="number" step="any" value="1800" inputmode="decimal"></div>
+      </div>
+      <div class="field"><label for="ap-util">Owner-paid utilities & other, annual ($)</label><input id="ap-util" type="number" step="any" value="1200" inputmode="decimal"><span class="hint">Water, sewer, trash, common power, landscaping</span></div>
+      <hr class="rule" style="margin:22px 0">
+      <span class="lbl lbl--bare" style="color:var(--on-dark-faint);margin-bottom:14px;display:block">Financing</span>
+      <div class="grid g2" style="gap:14px">
+        <div class="field"><label for="ap-down">Down payment (%)</label><input id="ap-down" type="number" step="any" value="25" inputmode="decimal"></div>
+        <div class="field"><label for="ap-rate">Interest rate (%)</label><input id="ap-rate" type="number" step="any" value="6.75" inputmode="decimal"></div>
+      </div>
+      <div class="grid g2" style="gap:14px">
+        <div class="field"><label for="ap-term">Term (years)</label><input id="ap-term" type="number" step="any" value="30" inputmode="decimal"></div>
+        <div class="field"><label for="ap-close">Closing + rehab cash ($)</label><input id="ap-close" type="number" step="any" value="12000" inputmode="decimal"></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="tool">
+      <div class="tool__hd"><span class="lbl lbl--bare" style="color:var(--green)">Annual property operating data</span></div>
+      <div class="tool__bd">
+        <div class="out" id="ap-out"></div>
+        <p class="out__note" id="ap-note"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="panel" style="margin-top:22px;border-color:rgba(190,142,54,.4)">
+  <span class="lbl lbl--gold">Not investment advice</span>
+  <p class="dek" style="font-size:14.5px;margin:14px 0 0;max-width:80ch">An estimate from the figures you enter. It is not an appraisal, not a valuation, and not investment advice. Verify rents against the actual leases, expenses against actual statements, taxes against the county record, and insurance against a real quote before you rely on any of it.</p>
+</div></div>
+     </section>
+     <section class="sec sec--tight"><div class="wrap"><span class="lbl">Questions</span><h2 style="margin:16px 0 22px">Asked and answered</h2><div class="faq" style="border-color:var(--line)"><details style="border-color:var(--line)"><summary>Why are the default expense assumptions so high?</summary><p style="color:var(--on-dark-dim)">Because the ones on listing flyers are usually too low. Vacancy, management and capital reserves are real costs whether or not you pay them to somebody else. A deal that only works with them removed does not work.</p></details><details style="border-color:var(--line)"><summary>Should I include management if I self-manage?</summary><p style="color:var(--on-dark-dim)">Yes. Your time has a price, and if you ever stop self-managing the expense appears. Leaving it out makes a bad deal look like a good one.</p></details><details style="border-color:var(--line)"><summary>What cap rate is good in Lane County?</summary><p style="color:var(--on-dark-dim)">There is no single right answer — it depends on the asset class, the vintage, and what you are being paid to take on. The useful comparison is against other deals you can actually buy right now, and against what your money does elsewhere.</p></details><details style="border-color:var(--line)"><summary>Does this account for the Oregon rent cap?</summary><p style="color:var(--on-dark-dim)">Not directly — it values the property as it operates today. When you model rent growth, remember Oregon caps most long-term residential increases at 9.5% for 2026 under ORS 90.323, and 6% for manufactured home facilities with more than 30 spaces.</p></details></div></div></section>
+     <section class="sec sec--tight"><div class="wrap">
+       <span class="lbl">More tools</span><h2 style="margin:16px 0 20px">The rest of the toolkit</h2>
+       <div class="index"><a href="/the-operative-group-site/tools/probate-path-finder/">Oregon Probate Path Finder<em>Probate</em></a><a href="/the-operative-group-site/tools/oregon-rent-increase-calculator/">2026 Oregon rent increase calculator<em>Landlords</em></a><a href="/the-operative-group-site/tools/eugene-adu-checker/">Eugene ADU size checker<em>Middle housing</em></a><a href="/the-operative-group-site/tools/net-proceeds/">Net proceeds estimator<em>Sellers</em></a></div>
+     </div></section>
+     <section class="band">
+  <svg class="arrow band__mark" style="" viewBox="0 0 1052 1037" aria-hidden="true" focusable="false"><path d="M45 163H710a175 175 0 0 1 175 175v666"/><path d="M125 924 790 259"/></svg>
+  <div class="wrap band__in">
+    <div>
+      <span class="lbl">Next step</span>
+      <h2 style="margin:16px 0 14px">Numbers not making sense?</h2>
+      <p class="dek" style="margin:0">Send the address and the inputs. We will run it properly and tell you what the calculator cannot — what the market is actually doing with property like yours.</p>
+    </div>
+    <div class="acts">
+      <a class="btn btn--go" href="https://calendly.com/theoperativegroup/talkwithdan" rel="noopener">Schedule a meeting <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn--ghost" href="tel:+14582090163">458.209.0163</a>
+    </div>
+  </div>
+</section></main><footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__top">
+      <div>
+        <div class="ftr__logo"><img src="/the-operative-group-site/assets/brand/tog-lockup-white.png" alt="The Operative Group" width="92" height="34"></div>
+        <p class="tiny" style="max-width:38ch;margin-bottom:18px">Help every family in Lane County make wise real estate decisions, with fiduciary representation, transparent and timely communication, and superior negotiation.</p>
+        <p style="margin:0 0 6px;font-weight:700;font-size:1.15rem"><a href="tel:+14582090163">458.209.0163</a></p>
+        <p style="margin:0 0 18px;color:var(--on-dark-dim)"><a href="mailto:dan@theoperativegroup.com">dan@theoperativegroup.com</a></p>
+        <div class="ftr__badges">
+          <img src="/the-operative-group-site/assets/brand/equal-housing.png" alt="Equal Housing Opportunity" width="84" height="38" loading="lazy">
+        </div>
+      </div>
+      <div><h4>Leaving</h4><ul><li><a href="/the-operative-group-site/sell/">Sell a house</a></li><li><a href="/the-operative-group-site/sell/four-exits/">The four exits</a></li><li><a href="/the-operative-group-site/probate/">Probate & trust</a></li><li><a href="/the-operative-group-site/downsize/">Downsize</a></li><li><a href="/the-operative-group-site/relocate/leaving-oregon/">Leaving Oregon</a></li></ul></div>
+      <div><h4>Entering</h4><ul><li><a href="/the-operative-group-site/buy/">Buy a house</a></li><li><a href="/the-operative-group-site/invest/">Invest</a></li><li><a href="/the-operative-group-site/relocate/moving-to-oregon/">Moving to Oregon</a></li><li><a href="/the-operative-group-site/join/">Join the team</a></li><li><a href="/the-operative-group-site/tools/">Tools & calculators</a></li></ul></div>
+      <div><h4>The firm</h4><ul><li><a href="/the-operative-group-site/about/">About</a></li><li><a href="/the-operative-group-site/about/approach/">The method</a></li><li><a href="/the-operative-group-site/agents/">The team</a></li><li><a href="/the-operative-group-site/reviews/">Reviews</a></li><li><a href="/the-operative-group-site/oregon/">All of Oregon</a></li><li><a href="/the-operative-group-site/areas/">Lane County</a></li><li><a href="/the-operative-group-site/contact/">Contact</a></li></ul></div>
+    </div>
+    <div class="ftr__bot">
+      <p>&copy; 2026 The Operative Group · REAL Broker · Lane County, Oregon. Equal Housing Opportunity. All brokers are licensed in the State of Oregon. Market figures carry their source and date on the page where they appear; they are not a valuation of any specific property. Real estate commissions are negotiable and are not set by law or by any association. Nothing here is legal, tax or investment advice.</p>
+      <p class="mono" style="display:flex;gap:16px"><a href="/the-operative-group-site/privacy/">Privacy</a><a href="/the-operative-group-site/terms/">Terms</a><a href="/the-operative-group-site/accessibility/">Accessibility</a><a href="/the-operative-group-site/sitemap/">Sitemap</a></p>
+    </div>
+  </div>
+</footer><script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('mnav');
+  if(b&&m)b.addEventListener('click',function(){
+    var o=m.hasAttribute('data-open');
+    if(o){m.removeAttribute('data-open');b.setAttribute('aria-expanded','false');}
+    else{m.setAttribute('data-open','');b.setAttribute('aria-expanded','true');}
+  });
+  var p=document.getElementById('prog');
+  if(p)addEventListener('scroll',function(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    p.style.width=(max>0?(h.scrollTop/max)*100:0)+'%';
+  },{passive:true});
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var els=document.querySelectorAll('[data-rv]');
+  if(rm||!('IntersectionObserver'in window)){els.forEach(function(e){e.setAttribute('data-in','')});}
+  else{
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.setAttribute('data-in','');io.unobserve(e.target);}
+    })},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    els.forEach(function(e,i){e.style.transitionDelay=(Math.min(i,6)*45)+'ms';io.observe(e)});
+  }
+  document.querySelectorAll('.hero__mark path').forEach(function(p){
+    try{var L=p.getTotalLength();p.style.setProperty('--len',L);}catch(e){}
+  });
+})();
+
+(function(){
+  var ids=['price','rent','other','vac','mgmt','maint','res','tax','ins','util','down','rate','term','close'];
+  var D={price:450000,rent:3200,other:0,vac:6,mgmt:8,maint:6,res:5,tax:5400,ins:1800,util:1200,down:25,rate:6.75,term:30,close:12000};
+  var out=document.getElementById('ap-out'), note=document.getElementById('ap-note');
+  var g=function(k){var e=document.getElementById('ap-'+k);var v=parseFloat(e&&e.value);return isFinite(v)?v:0;};
+  var money=function(n){return (n<0?'-':'')+'$'+Math.round(Math.abs(n)).toLocaleString();};
+  var row=function(l,v,big){return '<div class="out__row"><b>'+l+'</b><span'+(big?'':' style="font-size:1.05rem;color:var(--on-dark)"')+'>'+v+'</span></div>';};
+  function calc(){
+    var price=g('price'), gsi=(g('rent')+g('other'))*12;
+    var vac=gsi*g('vac')/100, egi=gsi-vac;
+    var mgmt=egi*g('mgmt')/100, maint=egi*g('maint')/100, res=egi*g('res')/100;
+    var opex=mgmt+maint+res+g('tax')+g('ins')+g('util');
+    var noi=egi-opex;
+    var cap=price>0?noi/price*100:0;
+    var grm=(price>0&&gsi>0)?price/gsi:0;
+    var loan=price*(1-g('down')/100);
+    var r=g('rate')/100/12, n=g('term')*12;
+    var pay = (r>0&&n>0)? loan*r/(1-Math.pow(1+r,-n)) : (n>0?loan/n:0);
+    var ds=pay*12, cf=noi-ds;
+    var invested=price*g('down')/100+g('close');
+    var coc=invested>0?cf/invested*100:0;
+    var dscr=ds>0?noi/ds:0;
+    out.innerHTML =
+      row('Gross scheduled income',money(gsi))+
+      row('Less vacancy',money(-vac))+
+      row('Effective gross income',money(egi))+
+      row('Total operating expenses',money(-opex))+
+      row('Net operating income',money(noi),1)+
+      row('Cap rate',cap.toFixed(2)+'%',1)+
+      row('Gross rent multiplier',grm.toFixed(2),1)+
+      row('Annual debt service',money(-ds))+
+      row('Annual cash flow',money(cf),1)+
+      row('Cash invested',money(invested))+
+      row('Cash-on-cash return',coc.toFixed(2)+'%',1)+
+      row('Debt service coverage',dscr.toFixed(2));
+    var msgs=[];
+    if(egi<=0){ msgs.push('Enter a gross monthly rent to get an expense ratio and a return.'); }
+    else {
+      var oer=opex/egi*100;
+      msgs.push('Operating expenses are '+oer.toFixed(0)+'% of effective gross income.');
+      if(oer<35) msgs.push('Under about 35% is unusually low for older residential stock — check that taxes, insurance and reserves are realistic.');
+    }
+    if(cf<0) msgs.push('This deal is negative on cash flow at these terms.');
+    if(dscr>0&&dscr<1.25) msgs.push('Debt service coverage under 1.25 is where most commercial lenders start declining.');
+    if(g('vac')===0||g('mgmt')===0||g('res')===0) msgs.push('One or more of vacancy, management or reserves is set to zero. That is how a pro forma flatters a property.');
+    note.innerHTML=msgs.join(' ');
+  }
+  ids.forEach(function(k){var e=document.getElementById('ap-'+k); if(e){e.addEventListener('input',calc);}});
+  document.getElementById('ap-reset').addEventListener('click',function(){
+    ids.forEach(function(k){var e=document.getElementById('ap-'+k); if(e) e.value=D[k];}); calc();
+  });
+  calc();
+})();</script></body></html>
