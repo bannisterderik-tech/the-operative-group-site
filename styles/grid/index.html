@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Grid — style option | The Operative Group</title>
+<meta name="description" content="Swiss discipline. Tight columns, colour blocks, hierarchy carried by size and weight. One of five design directions for theoperativegroup.com, shown on the.">
+<link rel="canonical" href="https://www.theoperativegroup.com/styles/grid/">
+<meta name="robots" content="noindex,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Grid — style option | The Operative Group">
+<meta property="og:description" content="Swiss discipline. Tight columns, colour blocks, hierarchy carried by size and weight. One of five design directions for theoperativegroup.com, shown on the.">
+<meta property="og:url" content="https://www.theoperativegroup.com/styles/grid/">
+<meta property="og:site_name" content="The Operative Group">
+<meta property="og:image" content="https://www.theoperativegroup.com/assets/brand/tog-lockup-color.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B0F0C">
+<link rel="icon" href="/the-operative-group-site/assets/brand/tog-arrow.png" type="image/png">
+<link rel="apple-touch-icon" href="/the-operative-group-site/assets/brand/tog-arrow.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/the-operative-group-site/assets/site.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Narrow:wght@500;600;700&display=swap">
+<style>
+:root{
+  --paper:#F2F2EF; --paper-2:#E6E6E1; --paper-3:#D6D6D0; --sand:#EAEAE5;
+  --forest:#15251A; --forest-2:#1E3323; --ink:#14181A; --ink-2:#464E50; --ink-3:#5F676A;
+  --green-ink:#3D6B1B; --green-soft:#E3F0D3;
+  --line:rgba(20,24,26,.18); --line-2:rgba(20,24,26,.11);
+  --display:'Archivo',system-ui,sans-serif; --body:'Archivo',system-ui,sans-serif;
+  --label:'Archivo Narrow',sans-serif;
+  --r:0px; --r-sm:0px; --r-lg:0px; --r-pill:0px; --max:1320px;
+  --shadow:none; --shadow-lg:none;
+}
+h1,h2,h3,h4{font-weight:700;letter-spacing:-.03em}
+h1{font-size:clamp(2.6rem,6vw,4.8rem);line-height:.98}
+h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1}
+.lbl{font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.14em}
+.lbl::before{height:2px;width:24px;border-radius:0}
+.btn{border-radius:0;font-weight:700;font-size:14.5px;padding:15px 24px;box-shadow:none}
+.card,.pcard,.exit,.step,.panel,.vec__card,.proof__i,.tool,.data,.index a,
+.figure,.mosaic figure,.hero__photo,.teamphoto,.pcard__img,.chip{border-radius:0}
+.vec__grid,.exits,.rail,.proof,.pcards{gap:1px;background:var(--line)}
+.vec__card,.exit,.step,.proof__i,.pcard{border:0}
+.proof__i{background:var(--paper)}
+.proof__n{font-family:var(--display);font-weight:700;letter-spacing:-.04em}
+.proof__u{font-family:var(--label);letter-spacing:.12em}
+.hero{background:var(--paper)}
+.hero__mark{opacity:.12}
+.index{gap:1px;background:var(--line)}
+.index a{border:0}
+.data__v,.spec dd{font-family:var(--display);font-weight:700}
+.mosaic{gap:1px}
+</style>
+
+</head>
+<body>
+<div class="prog" id="prog"></div>
+<a class="skip" href="#main">Skip to content</a><header class="hdr">
+  <div class="hdr__in">
+    <a class="hdr__logo" href="/the-operative-group-site/" aria-label="The Operative Group — home">
+      <img src="/the-operative-group-site/assets/brand/tog-lockup-color.png" alt="The Operative Group" width="81" height="30">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="/the-operative-group-site/sell/">Sell</a><a href="/the-operative-group-site/buy/">Buy</a><a href="/the-operative-group-site/invest/">Invest</a><a href="/the-operative-group-site/probate/">Probate</a><a href="/the-operative-group-site/relocate/">Relocate</a><a href="/the-operative-group-site/downsize/">Downsize</a><a href="/the-operative-group-site/oregon/">Oregon</a><a href="/the-operative-group-site/tools/">Tools</a><a href="/the-operative-group-site/about/">About</a><a href="/the-operative-group-site/join/">Join</a>
+    </nav>
+    <a class="hdr__tel" href="tel:+14582090163">458.209.0163</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mnav" id="mnav">
+  <div class="mnav__in">
+    <a href="/the-operative-group-site/sell/">Sell<span>sell</span></a><a href="/the-operative-group-site/buy/">Buy<span>buy</span></a><a href="/the-operative-group-site/invest/">Invest<span>invest</span></a><a href="/the-operative-group-site/probate/">Probate<span>probate</span></a><a href="/the-operative-group-site/relocate/">Relocate<span>relocate</span></a><a href="/the-operative-group-site/downsize/">Downsize<span>downsize</span></a><a href="/the-operative-group-site/oregon/">Oregon<span>oregon</span></a><a href="/the-operative-group-site/tools/">Tools<span>tools</span></a><a href="/the-operative-group-site/about/">About<span>about</span></a><a href="/the-operative-group-site/join/">Join<span>join</span></a>
+    <a href="tel:+14582090163">458.209.0163<span>call</span></a>
+  </div>
+</div><main id="main"><nav class="switcher" aria-label="Style options">
+    <span class="switcher__lbl">Style</span>
+    <a href="/the-operative-group-site/styles/editorial/">Editorial</a><a href="/the-operative-group-site/styles/bold/">Bold</a><a href="/the-operative-group-site/styles/quiet/">Quiet</a><a href="/the-operative-group-site/styles/dark/">Dark</a><a href="/the-operative-group-site/styles/grid/" aria-current="page">Grid</a>
+    <a href="/the-operative-group-site/" class="switcher__live">Current</a>
+  </nav>
+<section class="hero">
+ <svg class="arrow hero__mark" style="" viewBox="0 0 1052 1037" aria-hidden="true" focusable="false"><path d="M45 163H710a175 175 0 0 1 175 175v666"/><path d="M125 924 790 259"/></svg>
+ <div class="wrap hero__in">
+  <div class="hero__split">
+   <div>
+    <span class="lbl">Eugene · Springfield · all of Oregon</span>
+    <h1>Four ways out of your house.<br>We price <em>all four</em>.</h1>
+    <p class="dek hero__dek">Most agents show you one. We were buying and fixing and renting Oregon houses with our own money long before we listed anyone else’s — so you get the market price, the off-market price, our price, and an institutional offer, side by side.</p>
+    <div class="hero__acts">
+     <a class="btn btn--go" href="/the-operative-group-site/sell/four-exits/">See what your house nets <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+     <a class="btn btn--ghost" href="tel:+14582090163">458.209.0163</a>
+    </div>
+    <div class="hero__meta">
+     <span>140+ transactions closed in the last twelve months</span>
+     <span>150+ five-star reviews</span>
+     <span>#6 in Oregon for sides, 2024</span>
+    </div>
+   </div>
+   <div>
+    <figure style="margin:0">
+  <div class="hero__photo">
+   <picture>
+    <source type="image/webp" sizes="(max-width:900px) 100vw, 1100px" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-700.webp 700w, /the-operative-group-site/assets/places/eugene-spencer-butte.webp 1200w">
+    <source type="image/jpeg" sizes="(max-width:900px) 100vw, 1100px" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-700.jpg 700w, /the-operative-group-site/assets/places/eugene-spencer-butte.jpg 1200w">
+    <img src="/the-operative-group-site/assets/places/eugene-spencer-butte.jpg" alt="Eugene, Oregon with Spencer Butte rising to the south" width="1200" height="675" loading="eager" fetchpriority="high">
+   </picture>
+  </div>
+  
+ </figure>
+    <p class="credit">Eugene and Spencer Butte. Photo by Don Hankins, <a href="https://creativecommons.org/licenses/by/2.0/" rel="license nofollow noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Eugene_and_Spencer_Butte.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</p>
+   </div>
+  </div>
+
+  <div class="vec">
+   <div class="vec__head">
+    <span class="lbl">Not selling? Start here</span>
+    <span class="tiny">Eight doors. Pick the one you’re standing in front of.</span>
+   </div>
+   <div class="vec__grid">
+  <a class="vec__card" href="/sell/">
+   <span class="vec__dir"><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 11.4 4.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M6.6 3.2h5.8v5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i> Leaving</span>
+   <span class="vec__name">Sell</span>
+   <span class="vec__line">List it, sell it quietly, or let us buy it. You see every number first.</span>
+   <span class="vec__go">Compare the four <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+  <a class="vec__card" href="/buy/">
+   <span class="vec__dir"><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 3 4.6 11.4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M3.2 6.6v5.8h5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i> Entering</span>
+   <span class="vec__name">Buy</span>
+   <span class="vec__line">Losing houses you wanted? Usually it’s the offer, not the price.</span>
+   <span class="vec__go">Start looking <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+  <a class="vec__card" href="/invest/">
+   <span class="vec__dir"><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 3 4.6 11.4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M3.2 6.6v5.8h5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 11.4 4.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M6.6 3.2h5.8v5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i> Entering &amp; leaving</span>
+   <span class="vec__name">Invest</span>
+   <span class="vec__line">We own what we recommend. Bring us a deal and we’ll tear it apart.</span>
+   <span class="vec__go">Run a deal <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+  <a class="vec__card" href="/probate/">
+   <span class="vec__dir"><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 11.4 4.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M6.6 3.2h5.8v5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i> Leaving</span>
+   <span class="vec__name">Probate &amp; trust</span>
+   <span class="vec__line">A house you didn’t ask for, and a court nobody explained. Start here.</span>
+   <span class="vec__go">Find your path <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+  <a class="vec__card" href="/relocate/">
+   <span class="vec__dir"><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 3 4.6 11.4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M3.2 6.6v5.8h5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 11.4 4.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M6.6 3.2h5.8v5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i> Entering &amp; leaving</span>
+   <span class="vec__name">Relocate</span>
+   <span class="vec__line">Landing in Oregon, or leaving it. Two very different jobs.</span>
+   <span class="vec__go">Get the plan <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+  <a class="vec__card" href="/downsize/">
+   <span class="vec__dir"><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 11.4 4.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M6.6 3.2h5.8v5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i> Leaving</span>
+   <span class="vec__name">Downsize</span>
+   <span class="vec__line">The house got big, or life changed. Either way, no rush and no pressure.</span>
+   <span class="vec__go">See how it works <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+  <a class="vec__card" href="/join/">
+   <span class="vec__dir"><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 3 4.6 11.4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M3.2 6.6v5.8h5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i> Entering</span>
+   <span class="vec__name">Join the team</span>
+   <span class="vec__line">#6 in Oregon for sides. We’ll hand you the whole playbook.</span>
+   <span class="vec__go">See the offer <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+  <a class="vec__card" href="/the-operative-group-site/tools/">
+   <span class="vec__dir"><i><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 11.4 4.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="M6.6 3.2h5.8v5.8" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg></i> Free</span>
+   <span class="vec__name">Tools</span>
+   <span class="vec__line">Probate path finder, cap-rate calculator, 2026 rent cap, ADU checker. No email, no form.</span>
+   <span class="vec__go">Open the tools <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+  </a>
+ </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec sec--tight">
+ <div class="wrap"><div class="proof">
+  <div class="proof__i">
+   <div class="proof__n">140+</div>
+   <div class="proof__u">transactions</div>
+   <div class="proof__l">closed in the last twelve months</div>
+   <div class="proof__s">The Operative Group, reported September 2026</div>
+  </div>
+  <div class="proof__i">
+   <div class="proof__n">$55M</div>
+   <div class="proof__u">in volume</div>
+   <div class="proof__l">over the same twelve months</div>
+   <div class="proof__s">The Operative Group, reported September 2026</div>
+  </div>
+  <div class="proof__i">
+   <div class="proof__n">#6</div>
+   <div class="proof__u">in Oregon</div>
+   <div class="proof__l">for sides in 2024 — #7 for volume</div>
+   <div class="proof__s">Wall Street Journal / RealTrends</div>
+  </div>
+  <div class="proof__i">
+   <div class="proof__n">150+</div>
+   <div class="proof__u">five-star</div>
+   <div class="proof__l">reviews across their review profiles</div>
+   <div class="proof__s">The Operative Group, reported September 2026</div>
+  </div>
+  <div class="proof__i">
+   <div class="proof__n">21</div>
+   <div class="proof__u">advisors</div>
+   <div class="proof__l">listed on their own team page</div>
+   <div class="proof__s">The Operative Group team page</div>
+  </div>
+  <div class="proof__i">
+   <div class="proof__n">700+</div>
+   <div class="proof__u">investors</div>
+   <div class="proof__l">on the curated off-market buyer list</div>
+   <div class="proof__s">The Operative Group</div>
+  </div></div></div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+ <div class="wrap">
+  <div style="text-align:center;max-width:62ch;margin:0 auto" data-rv>
+   <span class="lbl lbl--bare" style="justify-content:center">The team</span>
+   <h2 style="margin:16px 0 14px">The people who pick up.</h2>
+   <p class="dek" style="margin:0 auto">One advisor who knows your file, and an operations team behind them running the deadlines, the marketing and the paperwork. You never have to ask where things stand.</p>
+  </div>
+  <div class="teamphoto" style="margin-top:clamp(28px,4vw,48px)" data-rv>
+   <picture><source type="image/webp" srcset="/the-operative-group-site/assets/hero-oregon.webp"><img src="/the-operative-group-site/assets/hero-oregon.jpg" alt="The Operative Group team of twenty-one advisors, Eugene Oregon, with Real Broker" width="1800" height="878" loading="lazy" decoding="async"></picture>
+  </div>
+  <div style="margin-top:clamp(28px,4vw,44px)" data-rv>
+   <div class="roster">
+  <a class="agent" href="/the-operative-group-site/agents/dan-gandee/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/dan-gandee-320.webp 320w, /the-operative-group-site/assets/team/dan-gandee.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/dan-gandee-320.jpg" srcset="/the-operative-group-site/assets/team/dan-gandee-320.jpg 320w, /the-operative-group-site/assets/team/dan-gandee.jpg 640w" sizes="320px"
+   alt="Dan Gandee, Owner · Team Leader · Partner at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Dan Gandee</span>
+   <span class="agent__r">Owner &amp; Team Leader</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/ed-zulyevic/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/ed-zulyevic-320.webp 320w, /the-operative-group-site/assets/team/ed-zulyevic.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/ed-zulyevic-320.jpg" srcset="/the-operative-group-site/assets/team/ed-zulyevic-320.jpg 320w, /the-operative-group-site/assets/team/ed-zulyevic.jpg 640w" sizes="320px"
+   alt="Ed Zulyevic, Co-Founder · Partner · Acquisitions Manager at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Ed Zulyevic</span>
+   <span class="agent__r">Partner &amp; Acquisitions</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/brett-herring/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/brett-herring-320.webp 320w, /the-operative-group-site/assets/team/brett-herring.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/brett-herring-320.jpg" srcset="/the-operative-group-site/assets/team/brett-herring-320.jpg 320w, /the-operative-group-site/assets/team/brett-herring.jpg 640w" sizes="320px"
+   alt="Brett Herring, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Brett Herring</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/george-winters/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/george-winters-320.webp 320w, /the-operative-group-site/assets/team/george-winters.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/george-winters-320.jpg" srcset="/the-operative-group-site/assets/team/george-winters-320.jpg 320w, /the-operative-group-site/assets/team/george-winters.jpg 640w" sizes="320px"
+   alt="George Winters, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">George Winters</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/larissa-mayfield/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/larissa-mayfield-320.webp 320w, /the-operative-group-site/assets/team/larissa-mayfield.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/larissa-mayfield-320.jpg" srcset="/the-operative-group-site/assets/team/larissa-mayfield-320.jpg 320w, /the-operative-group-site/assets/team/larissa-mayfield.jpg 640w" sizes="320px"
+   alt="Larissa Mayfield, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Larissa Mayfield</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/mason-drews/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/mason-drews-320.webp 320w, /the-operative-group-site/assets/team/mason-drews.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/mason-drews-320.jpg" srcset="/the-operative-group-site/assets/team/mason-drews-320.jpg 320w, /the-operative-group-site/assets/team/mason-drews.jpg 640w" sizes="320px"
+   alt="Mason Drews, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Mason Drews</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/shakir-evans/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/shakir-evans-320.webp 320w, /the-operative-group-site/assets/team/shakir-evans.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/shakir-evans-320.jpg" srcset="/the-operative-group-site/assets/team/shakir-evans-320.jpg 320w, /the-operative-group-site/assets/team/shakir-evans.jpg 640w" sizes="320px"
+   alt="Shakir Evans, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Shakir Evans</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/joshua-fowler/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/joshua-fowler-320.webp 320w, /the-operative-group-site/assets/team/joshua-fowler.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/joshua-fowler-320.jpg" srcset="/the-operative-group-site/assets/team/joshua-fowler-320.jpg 320w, /the-operative-group-site/assets/team/joshua-fowler.jpg 640w" sizes="320px"
+   alt="Joshua Fowler, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Joshua Fowler</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/daniella-gentry/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/daniella-gentry-320.webp 320w, /the-operative-group-site/assets/team/daniella-gentry.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/daniella-gentry-320.jpg" srcset="/the-operative-group-site/assets/team/daniella-gentry-320.jpg 320w, /the-operative-group-site/assets/team/daniella-gentry.jpg 640w" sizes="320px"
+   alt="Daniella Gentry, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Daniella Gentry</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/seth-cory/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/seth-cory-320.webp 320w, /the-operative-group-site/assets/team/seth-cory.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/seth-cory-320.jpg" srcset="/the-operative-group-site/assets/team/seth-cory-320.jpg 320w, /the-operative-group-site/assets/team/seth-cory.jpg 640w" sizes="320px"
+   alt="Seth Cory, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Seth Cory</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/aidan-keuter/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/aidan-keuter-320.webp 320w, /the-operative-group-site/assets/team/aidan-keuter.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/aidan-keuter-320.jpg" srcset="/the-operative-group-site/assets/team/aidan-keuter-320.jpg 320w, /the-operative-group-site/assets/team/aidan-keuter.jpg 640w" sizes="320px"
+   alt="Aidan Keuter, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Aidan Keuter</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/kimberly-karlovich/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/kimberly-karlovich-320.webp 320w, /the-operative-group-site/assets/team/kimberly-karlovich.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/kimberly-karlovich-320.jpg" srcset="/the-operative-group-site/assets/team/kimberly-karlovich-320.jpg 320w, /the-operative-group-site/assets/team/kimberly-karlovich.jpg 640w" sizes="320px"
+   alt="Kimberly Karlovich, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Kimberly Karlovich</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/logan-porter/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/logan-porter-320.webp 320w, /the-operative-group-site/assets/team/logan-porter.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/logan-porter-320.jpg" srcset="/the-operative-group-site/assets/team/logan-porter-320.jpg 320w, /the-operative-group-site/assets/team/logan-porter.jpg 640w" sizes="320px"
+   alt="Logan Porter, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Logan Porter</span>
+   <span class="agent__r">REALTOR®</span>
+  </a>
+  <a class="agent" href="/the-operative-group-site/agents/mike-robinson/">
+   <span class="agent__ph"><picture>
+  <source type="image/webp" srcset="/the-operative-group-site/assets/team/mike-robinson-320.webp 320w, /the-operative-group-site/assets/team/mike-robinson.webp 640w" sizes="320px">
+  <img src="/the-operative-group-site/assets/team/mike-robinson-320.jpg" srcset="/the-operative-group-site/assets/team/mike-robinson-320.jpg 320w, /the-operative-group-site/assets/team/mike-robinson.jpg 640w" sizes="320px"
+   alt="Michael Robinson, REALTOR® at The Operative Group" width="320" height="320" loading="lazy" decoding="async">
+ </picture></span>
+   <span class="agent__n">Michael Robinson</span>
+   <span class="agent__r">REALTOR®</span>
+  </a></div>
+  </div>
+  <p style="margin-top:28px" data-rv><a class="btn btn--ghost" href="/the-operative-group-site/agents/">Meet the whole team <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+ </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+ <div class="wrap">
+  <div class="split">
+   <div data-rv>
+    
+ <span class="lbl">The four exits</span>
+ <h2 style="margin:18px 0 0;max-width:20ch">Same house.<br>Four very different numbers.</h2>
+ 
+    <p class="dek" style="margin-top:16px">How a house leaves your hands changes what you keep. Speed costs money. Condition costs money. Certainty costs money. We put all four options on one page so you can see the trade — including the one where we’re the buyer, which we put in writing and tell you to get a second opinion on.</p>
+    <div class="hero__acts" style="margin-top:26px">
+     <a class="btn btn--go" href="/the-operative-group-site/sell/four-exits/">Compare the four exits <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+     <a class="btn btn--ghost" href="/the-operative-group-site/whats-my-home-worth/">What's my home worth?</a>
+    </div>
+   </div>
+   <div data-rv>
+    <div class="data">
+  <div class="data__row">
+   <div class="data__k">Median sale price</div>
+   <div class="data__v">$464,000</div>
+   <div class="data__n">Lane County, three months ending June 2026, down 3.5% YoY · <span class="mono">Redfin</span></div>
+  </div>
+  <div class="data__row">
+   <div class="data__k">Median days on market</div>
+   <div class="data__v">18</div>
+   <div class="data__n">down from 22 a year earlier · <span class="mono">Redfin</span></div>
+  </div>
+  <div class="data__row">
+   <div class="data__k">Homes sold in June</div>
+   <div class="data__v">414</div>
+   <div class="data__n">up from 368 in June 2025 · <span class="mono">Redfin</span></div>
+  </div>
+  <div class="data__row">
+   <div class="data__k">Average home value</div>
+   <div class="data__v">$459,370</div>
+   <div class="data__n">roughly flat year over year · <span class="mono">Zillow</span></div>
+  </div></div>
+    <p class="tiny" style="margin-top:14px">Figures as of September 2026. <a href="/the-operative-group-site/market/" class="hl">See the full market board</a>.</p>
+   </div>
+  </div>
+  <div style="margin-top:clamp(32px,4.5vw,56px)" data-rv><div class="exits">
+  <article class="exit" id="rmls">
+   <div class="exit__hd">
+    <span class="exit__n">01</span>
+    <span>
+     <h3 class="exit__name">List on the RMLS</h3>
+     <span class="exit__sub">Full market exposure, agent to agent</span>
+    </span>
+   </div>
+   <dl class="spec">
+    <div><dt>Timeline</dt><dd>Longest</dd></div><div><dt>Top price</dt><dd data-best>Highest</dd></div><div><dt>Repairs</dt><dd>Usually expected</dd></div><div><dt>Showings</dt><dd>Yes</dd></div><div><dt>Public listing</dt><dd>Yes</dd></div>
+   </dl>
+   <p class="exit__who">You have time, the house shows well or can be made to, and you want the highest number the open market will pay.</p>
+   <p class="exit__real">Full marketing, full exposure, full negotiation. It’s also the slowest path and the one where condition matters most — buyers with financing bring appraisers and inspectors.</p>
+  </article>
+  <article class="exit" id="off-market">
+   <div class="exit__hd">
+    <span class="exit__n">02</span>
+    <span>
+     <h3 class="exit__name">Sell off market</h3>
+     <span class="exit__sub">To our 700+ cash and accredited buyers</span>
+    </span>
+   </div>
+   <dl class="spec">
+    <div><dt>Timeline</dt><dd>Short</dd></div><div><dt>Top price</dt><dd>Below market</dd></div><div><dt>Repairs</dt><dd data-best>None</dd></div><div><dt>Showings</dt><dd data-best>No</dd></div><div><dt>Public listing</dt><dd data-best>No</dd></div>
+   </dl>
+   <p class="exit__who">The house needs work, or the situation is private, or you want to know your number before the sign goes in the yard.</p>
+   <p class="exit__real">No showings, no public listing, no repairs. You trade some of the top-of-market premium for speed and privacy. We’ll tell you what that trade costs before you take it.</p>
+  </article>
+  <article class="exit" id="we-buy">
+   <div class="exit__hd">
+    <span class="exit__n">03</span>
+    <span>
+     <h3 class="exit__name">We buy it</h3>
+     <span class="exit__sub">Into Dan and Ed&#39;s own portfolio</span>
+    </span>
+   </div>
+   <dl class="spec">
+    <div><dt>Timeline</dt><dd data-best>Shortest</dd></div><div><dt>Top price</dt><dd>Lowest</dd></div><div><dt>Repairs</dt><dd data-best>None</dd></div><div><dt>Showings</dt><dd data-best>No</dd></div><div><dt>Public listing</dt><dd data-best>No</dd></div>
+   </dl>
+   <p class="exit__who">Certainty is the whole point — a deadline, an estate to settle, a property you never want to think about again.</p>
+   <p class="exit__real">We’re the buyer, which means we disclose that in writing and you should get a second opinion. It’s the fastest and most certain path and it’s not the highest price. Both of those things are true.</p>
+  </article>
+  <article class="exit" id="institutional-offer">
+   <div class="exit__hd">
+    <span class="exit__n">04</span>
+    <span>
+     <h3 class="exit__name">Institutional offer</h3>
+     <span class="exit__sub">A cash offer from a national buyer</span>
+    </span>
+   </div>
+   <dl class="spec">
+    <div><dt>Timeline</dt><dd>Short</dd></div><div><dt>Top price</dt><dd>Below market</dd></div><div><dt>Repairs</dt><dd>Usually none</dd></div><div><dt>Showings</dt><dd>Inspection only</dd></div><div><dt>Public listing</dt><dd data-best>No</dd></div>
+   </dl>
+   <p class="exit__who">You want an institutional number to benchmark the other three against, whether or not you take it.</p>
+   <p class="exit__real">We run this as a price check at least as often as we run it as an exit — knowing what an institutional buyer will pay makes every other decision easier. Which platform we can reach depends on what the brokerage currently offers, so ask and we’ll tell you what’s live today rather than name one that may not be.</p>
+  </article></div></div>
+ </div>
+</section>
+
+<section class="band-photo">
+ <img src="/the-operative-group-site/assets/places/mckenzie-river.jpg" alt="The McKenzie River east of Springfield, Oregon" width="1500" height="1000" loading="lazy">
+ <div class="wrap band-photo__in">
+  <span class="lbl">Where we work</span>
+  <h2 style="margin:18px 0 16px;max-width:18ch;color:#fff">We know one county cold.<br>We cover the whole state.</h2>
+  <p class="dek" style="max-width:54ch">Lane County is home — twenty-four towns from Coburg to Blue River to Florence, and eighteen neighborhoods inside Eugene. Past the county line, ten Oregon regions, and we say straight out which ones we work ourselves and which ones we hand to somebody better placed.</p>
+  <p style="margin-top:26px"><a class="btn btn--go" href="/the-operative-group-site/areas/">Lane County, town by town <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a> <a class="btn btn--ghost" href="/the-operative-group-site/oregon/">All of Oregon <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+ </div>
+</section>
+
+<section class="sec">
+ <div class="wrap">
+  <div class="pcards" data-rv>
+   <a class="pcard" href="/the-operative-group-site/sell/eugene/">
+    <span class="pcard__img"><picture>
+      <source type="image/webp" sizes="(max-width:700px) 92vw, 380px" srcset="/the-operative-group-site/assets/places/eugene-downtown-card400.webp 400w, /the-operative-group-site/assets/places/eugene-downtown-card.webp 800w">
+      <img src="/the-operative-group-site/assets/places/eugene-downtown-card400.jpg" srcset="/the-operative-group-site/assets/places/eugene-downtown-card400.jpg 400w, /the-operative-group-site/assets/places/eugene-downtown-card.jpg 800w" sizes="(max-width:700px) 92vw, 380px" alt="Downtown Eugene, Oregon, seen from Skinner Butte" width="800" height="600" loading="lazy" decoding="async">
+    </picture></span>
+    <span class="pcard__body">
+      <span class="pcard__k">City</span>
+      <span class="pcard__t">Eugene</span>
+      <span class="pcard__l">County seat of Lane County and home of the University of Oregon.</span>
+    </span>
+  </a><a class="pcard" href="/the-operative-group-site/sell/springfield/">
+    <span class="pcard__img"><picture>
+      <source type="image/webp" sizes="(max-width:700px) 92vw, 380px" srcset="/the-operative-group-site/assets/places/springfield-main-card400.webp 400w, /the-operative-group-site/assets/places/springfield-main-card.webp 800w">
+      <img src="/the-operative-group-site/assets/places/springfield-main-card400.jpg" srcset="/the-operative-group-site/assets/places/springfield-main-card400.jpg 400w, /the-operative-group-site/assets/places/springfield-main-card.jpg 800w" sizes="(max-width:700px) 92vw, 380px" alt="Main Street in downtown Springfield, Oregon" width="800" height="600" loading="lazy" decoding="async">
+    </picture></span>
+    <span class="pcard__body">
+      <span class="pcard__k">City</span>
+      <span class="pcard__t">Springfield</span>
+      <span class="pcard__l">Across the Willamette from Eugene, with its own school district and its own market.</span>
+    </span>
+  </a><a class="pcard" href="/the-operative-group-site/sell/cottage-grove/">
+    <span class="pcard__img"><picture>
+      <source type="image/webp" sizes="(max-width:700px) 92vw, 380px" srcset="/the-operative-group-site/assets/places/cottage-grove-bridge-card400.webp 400w, /the-operative-group-site/assets/places/cottage-grove-bridge-card.webp 800w">
+      <img src="/the-operative-group-site/assets/places/cottage-grove-bridge-card400.jpg" srcset="/the-operative-group-site/assets/places/cottage-grove-bridge-card400.jpg 400w, /the-operative-group-site/assets/places/cottage-grove-bridge-card.jpg 800w" sizes="(max-width:700px) 92vw, 380px" alt="The Chambers Covered Bridge at Cottage Grove, Oregon" width="800" height="600" loading="lazy" decoding="async">
+    </picture></span>
+    <span class="pcard__body">
+      <span class="pcard__k">City</span>
+      <span class="pcard__t">Cottage Grove</span>
+      <span class="pcard__l">Interstate 5, about twenty miles south of Eugene.</span>
+    </span>
+  </a><a class="pcard" href="/the-operative-group-site/sell/florence/">
+    <span class="pcard__img"><picture>
+      <source type="image/webp" sizes="(max-width:700px) 92vw, 380px" srcset="/the-operative-group-site/assets/places/florence-bridge-card400.webp 400w, /the-operative-group-site/assets/places/florence-bridge-card.webp 800w">
+      <img src="/the-operative-group-site/assets/places/florence-bridge-card400.jpg" srcset="/the-operative-group-site/assets/places/florence-bridge-card400.jpg 400w, /the-operative-group-site/assets/places/florence-bridge-card.jpg 800w" sizes="(max-width:700px) 92vw, 380px" alt="The Siuslaw River Bridge at Florence, Oregon" width="800" height="600" loading="lazy" decoding="async">
+    </picture></span>
+    <span class="pcard__body">
+      <span class="pcard__k">City</span>
+      <span class="pcard__t">Florence</span>
+      <span class="pcard__l">On the Pacific coast at the mouth of the Siuslaw River.</span>
+    </span>
+  </a><a class="pcard" href="/the-operative-group-site/sell/coburg/">
+    <span class="pcard__img"><picture>
+      <source type="image/webp" sizes="(max-width:700px) 92vw, 380px" srcset="/the-operative-group-site/assets/places/coburg-historic-card400.webp 400w, /the-operative-group-site/assets/places/coburg-historic-card.webp 800w">
+      <img src="/the-operative-group-site/assets/places/coburg-historic-card400.jpg" srcset="/the-operative-group-site/assets/places/coburg-historic-card400.jpg 400w, /the-operative-group-site/assets/places/coburg-historic-card.jpg 800w" sizes="(max-width:700px) 92vw, 380px" alt="Nineteenth-century houses on Diamond Street in the Coburg historic district" width="800" height="600" loading="lazy" decoding="async">
+    </picture></span>
+    <span class="pcard__body">
+      <span class="pcard__k">City</span>
+      <span class="pcard__t">Coburg</span>
+      <span class="pcard__l">A small city at Interstate 5 exit 199, just north of Eugene.</span>
+    </span>
+  </a><a class="pcard" href="/the-operative-group-site/sell/veneta/">
+    <span class="pcard__img"><picture>
+      <source type="image/webp" sizes="(max-width:700px) 92vw, 380px" srcset="/the-operative-group-site/assets/places/fern-ridge-card400.webp 400w, /the-operative-group-site/assets/places/fern-ridge-card.webp 800w">
+      <img src="/the-operative-group-site/assets/places/fern-ridge-card400.jpg" srcset="/the-operative-group-site/assets/places/fern-ridge-card400.jpg 400w, /the-operative-group-site/assets/places/fern-ridge-card.jpg 800w" sizes="(max-width:700px) 92vw, 380px" alt="Sunset over Fern Ridge Lake west of Eugene, Oregon" width="800" height="600" loading="lazy" decoding="async">
+    </picture></span>
+    <span class="pcard__body">
+      <span class="pcard__k">City</span>
+      <span class="pcard__t">Veneta</span>
+      <span class="pcard__l">Highway 126 west of Eugene, at the edge of the Coast Range.</span>
+    </span>
+  </a><a class="pcard" href="/the-operative-group-site/sell/oakridge/">
+    <span class="pcard__img"><picture>
+      <source type="image/webp" sizes="(max-width:700px) 92vw, 380px" srcset="/the-operative-group-site/assets/places/oakridge-card400.webp 400w, /the-operative-group-site/assets/places/oakridge-card.webp 800w">
+      <img src="/the-operative-group-site/assets/places/oakridge-card400.jpg" srcset="/the-operative-group-site/assets/places/oakridge-card400.jpg 400w, /the-operative-group-site/assets/places/oakridge-card.jpg 800w" sizes="(max-width:700px) 92vw, 380px" alt="Oakridge, Oregon, from the North Fork Trail above town" width="800" height="600" loading="lazy" decoding="async">
+    </picture></span>
+    <span class="pcard__body">
+      <span class="pcard__k">City</span>
+      <span class="pcard__t">Oakridge</span>
+      <span class="pcard__l">Highway 58 in the Cascades, southeast of Eugene.</span>
+    </span>
+  </a><a class="pcard" href="/the-operative-group-site/sell/blue-river/">
+    <span class="pcard__img"><picture>
+      <source type="image/webp" sizes="(max-width:700px) 92vw, 380px" srcset="/the-operative-group-site/assets/places/sahalie-falls-card400.webp 400w, /the-operative-group-site/assets/places/sahalie-falls-card.webp 800w">
+      <img src="/the-operative-group-site/assets/places/sahalie-falls-card400.jpg" srcset="/the-operative-group-site/assets/places/sahalie-falls-card400.jpg 400w, /the-operative-group-site/assets/places/sahalie-falls-card.jpg 800w" sizes="(max-width:700px) 92vw, 380px" alt="Sahalie Falls on the upper McKenzie River" width="800" height="600" loading="lazy" decoding="async">
+    </picture></span>
+    <span class="pcard__body">
+      <span class="pcard__k">Rural Lane County</span>
+      <span class="pcard__t">Blue River</span>
+      <span class="pcard__l">Upper McKenzie community, most of which burned in 2020.</span>
+    </span>
+  </a>
+  </div>
+  <details class="credits">
+    <summary>Photo credits (8)</summary>
+    <ul><li>Downtown Eugene, Oregon, seen from Skinner Butte — Rick Obst, <a href="https://creativecommons.org/licenses/by/2.0/" rel="license nofollow noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Downtown_Eugene,_Oregon_from_Skinner_Butte.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Main Street in downtown Springfield, Oregon — AnthonyTheGuy, <a href="https://creativecommons.org/licenses/by/4.0/" rel="license nofollow noopener">CC BY 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Main_Street,_Downtown_Springfield,_Oregon,_19_September_2026.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>The Chambers Covered Bridge at Cottage Grove, Oregon — Chris Phan from Glasgow, United Kingdom, <a href="https://creativecommons.org/licenses/by/2.0/" rel="license nofollow noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Chambers_Covered_Bridge_-_Cottage_Grove_OR_2006.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>The Siuslaw River Bridge at Florence, Oregon — Oregon Department of Transportation, <a href="https://creativecommons.org/licenses/by/2.0/" rel="license nofollow noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Siuslaw_River_Bridge_(33017811602).jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Nineteenth-century houses on Diamond Street in the Coburg historic district — Visitor7, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license nofollow noopener">CC BY-SA 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Coburg_Historic_District,_Diamond_Street_(Coburg,_Oregon).jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Sunset over Fern Ridge Lake west of Eugene, Oregon — David Geitgey Sierralupe, <a href="https://creativecommons.org/licenses/by/2.0/" rel="license nofollow noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Sunset_at_Fern_Ridge_Lake.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Oakridge, Oregon, from the North Fork Trail above town — Jsayre64, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license nofollow noopener">CC BY-SA 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Oakridge,_Oregon,_from_the_North_Fork_Trail.JPG" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Sahalie Falls on the upper McKenzie River — Kingofthedead, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:2017-07-09_Sahalie_Falls_11.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li></ul>
+  </details>
+  <p style="margin-top:30px" data-rv><a class="btn btn--ghost" href="/the-operative-group-site/areas/">All twenty-four towns <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a> <a class="btn btn--ghost" href="/the-operative-group-site/oregon/">The rest of Oregon <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+ </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+ <div class="wrap">
+  <div data-rv>
+ <span class="lbl">How we work</span>
+ <h2 style="margin:18px 0 16px;max-width:20ch">A hundred moving parts.<br>Eight you’ll notice.</h2>
+ <p class="dek">A typical transaction runs well over a hundred steps. These are the eight phases they fall into, and you get a tracker showing which one your deal is sitting in right now.</p></div>
+  <div style="margin-top:clamp(28px,4vw,46px)" data-rv><div class="rail">
+  <article class="step">
+   <span class="step__k">LISTEN</span>
+   <h3>We listen</h3>
+   <p>Your situation is yours alone. The first meeting is a listening appointment — we learn the journey and the goal before anyone talks about price.</p>
+  </article>
+  <article class="step">
+   <span class="step__k">RESEARCH</span>
+   <h3>We research</h3>
+   <p>Network, market data, and our own deals. We have bought and sold in this county with our own money, so the research isn’t theoretical.</p>
+  </article>
+  <article class="step">
+   <span class="step__k">ANALYZE</span>
+   <h3>We analyze</h3>
+   <p>Multiple entry and exit strategies, due diligence data, live market performance, and valuation two ways — income and price per square foot.</p>
+  </article>
+  <article class="step">
+   <span class="step__k">PLAN</span>
+   <h3>We plan</h3>
+   <p>The average transaction runs well over 100 steps. You get the order of operations, the timeline, and the budget in writing before we start.</p>
+  </article>
+  <article class="step">
+   <span class="step__k">EXECUTE</span>
+   <h3>We execute</h3>
+   <p>Professional photography and video, virtual tours, social, paid search, email, syndication, circle prospecting, targeted mail, and open houses — run by our in-house ad agency, Liftoff Agent.</p>
+  </article>
+  <article class="step">
+   <span class="step__k">CONNECT</span>
+   <h3>We connect</h3>
+   <p>Contractors, stagers, attorneys, estate planners, financial advisors, landscapers, accountants, property managers. Plus 700+ curated cash buyers and investors.</p>
+  </article>
+  <article class="step">
+   <span class="step__k">COMMUNICATE</span>
+   <h3>We communicate</h3>
+   <p>Weekly update calls and a transaction tracker you can follow. When something breaks, you hear it from us first — text, email, or phone.</p>
+  </article>
+  <article class="step">
+   <span class="step__k">CLOSE</span>
+   <h3>We close</h3>
+   <p>Some deals don’t close. A proactive approach means you find that out early, not at day 40, and it costs you less when it happens.</p>
+  </article></div></div>
+ </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+ <div class="wrap">
+  <div class="split" style="align-items:end">
+   <div data-rv>
+ <span class="lbl">Free. No email required</span>
+ <h2 style="margin:18px 0 0;max-width:20ch">Get your answer now.<br>Call us only if you want to.</h2>
+ </div>
+   <p style="margin:0" data-rv><a class="btn btn--ghost" href="/the-operative-group-site/tools/">All five tools <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+  </div>
+  <div class="grid g2" style="margin-top:34px">
+   <a class="card" href="/the-operative-group-site/tools/probate-path-finder/" data-rv>
+    <span class="card__k">Probate</span>
+    <h3>Oregon Probate Path Finder</h3>
+    <p>Five questions. Tells you whether a small estate affidavit is available, what it costs to file, and where in Eugene it gets filed. Built on the real $275,000 / $200,000 / $75,000 thresholds and ORS 114.325.</p>
+   </a>
+   <a class="card" href="/the-operative-group-site/tools/apod-calculator/" data-rv>
+    <span class="card__k">Investing</span>
+    <h3>APOD &amp; cap rate calculator</h3>
+    <p>Gross scheduled income down to net operating income, then cap rate, gross rent multiplier and cash-on-cash. The same four numbers we run on every deal we touch.</p>
+   </a>
+   <a class="card" href="/the-operative-group-site/tools/oregon-rent-increase-calculator/" data-rv>
+    <span class="card__k">Landlords</span>
+    <h3>2026 Oregon rent increase calculator</h3>
+    <p>9.5% for most long-term rentals, 6% for the larger manufactured home communities, exempt under 15 years old. Includes the 90-day notice math.</p>
+   </a>
+   <a class="card" href="/the-operative-group-site/tools/eugene-adu-checker/" data-rv>
+    <span class="card__k">Middle housing</span>
+    <h3>Eugene ADU size checker</h3>
+    <p>800 square feet or 10% of the lot, whichever is smaller. On most Eugene lots the 10% rule binds first — this tells you which one applies to yours.</p>
+   </a>
+  </div>
+ </div>
+</section>
+
+<hr class="rule">
+
+<section class="sec">
+ <div class="wrap">
+  <div class="split" style="align-items:end">
+   <div data-rv>
+ <span class="lbl">Oregon</span>
+ <h2 style="margin:18px 0 16px;max-width:20ch">Thirty-six counties.<br>One phone number.</h2>
+ <p class="dek">We know Lane County street by street. Everywhere else in the state, we either work it or we hand you to somebody who does — and we tell you which.</p></div>
+   <p style="margin:0" data-rv><a class="btn btn--ghost" href="/the-operative-group-site/oregon/">See the ten regions <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+  </div>
+  <div class="mosaic" style="margin-top:34px" data-rv>
+   <figure class="m-wide"><picture>
+         <source type="image/webp" sizes="(max-width:820px) 50vw, 300px" srcset="/the-operative-group-site/assets/places/crater-lake-card400.webp 400w, /the-operative-group-site/assets/places/crater-lake-card.webp 800w">
+         <img src="/the-operative-group-site/assets/places/crater-lake-card400.jpg" alt="Crater Lake in southern Oregon" width="800" height="600" loading="lazy" decoding="async"></picture>
+         <figcaption>Crater Lake in southern Oregon</figcaption></figure><figure class=""><picture>
+         <source type="image/webp" sizes="(max-width:820px) 50vw, 300px" srcset="/the-operative-group-site/assets/places/cannon-beach-card400.webp 400w, /the-operative-group-site/assets/places/cannon-beach-card.webp 800w">
+         <img src="/the-operative-group-site/assets/places/cannon-beach-card400.jpg" alt="Cannon Beach on the northern Oregon coast" width="800" height="600" loading="lazy" decoding="async"></picture>
+         <figcaption>Cannon Beach on the northern Oregon coast</figcaption></figure><figure class=""><picture>
+         <source type="image/webp" sizes="(max-width:820px) 50vw, 300px" srcset="/the-operative-group-site/assets/places/smith-rock-card400.webp 400w, /the-operative-group-site/assets/places/smith-rock-card.webp 800w">
+         <img src="/the-operative-group-site/assets/places/smith-rock-card400.jpg" alt="Smith Rock State Park in central Oregon" width="800" height="600" loading="lazy" decoding="async"></picture>
+         <figcaption>Smith Rock State Park in central Oregon</figcaption></figure><figure class="m-tall"><picture>
+         <source type="image/webp" sizes="(max-width:820px) 50vw, 300px" srcset="/the-operative-group-site/assets/places/mount-hood-card400.webp 400w, /the-operative-group-site/assets/places/mount-hood-card.webp 800w">
+         <img src="/the-operative-group-site/assets/places/mount-hood-card400.jpg" alt="Mount Hood above the Hood River valley" width="800" height="600" loading="lazy" decoding="async"></picture>
+         <figcaption>Mount Hood above the Hood River valley</figcaption></figure><figure class=""><picture>
+         <source type="image/webp" sizes="(max-width:820px) 50vw, 300px" srcset="/the-operative-group-site/assets/places/painted-hills-card400.webp 400w, /the-operative-group-site/assets/places/painted-hills-card.webp 800w">
+         <img src="/the-operative-group-site/assets/places/painted-hills-card400.jpg" alt="The Painted Hills in eastern Oregon" width="800" height="600" loading="lazy" decoding="async"></picture>
+         <figcaption>The Painted Hills in eastern Oregon</figcaption></figure><figure class=""><picture>
+         <source type="image/webp" sizes="(max-width:820px) 50vw, 300px" srcset="/the-operative-group-site/assets/places/willamette-vineyard-card400.webp 400w, /the-operative-group-site/assets/places/willamette-vineyard-card.webp 800w">
+         <img src="/the-operative-group-site/assets/places/willamette-vineyard-card400.jpg" alt="A vineyard in the Salem Hills, Willamette Valley" width="800" height="600" loading="lazy" decoding="async"></picture>
+         <figcaption>A vineyard in the Salem Hills</figcaption></figure><figure class="m-wide"><picture>
+         <source type="image/webp" sizes="(max-width:820px) 50vw, 300px" srcset="/the-operative-group-site/assets/places/portland-skyline-card400.webp 400w, /the-operative-group-site/assets/places/portland-skyline-card.webp 800w">
+         <img src="/the-operative-group-site/assets/places/portland-skyline-card400.jpg" alt="Portland from the east bank of the Willamette" width="800" height="600" loading="lazy" decoding="async"></picture>
+         <figcaption>Portland from the east bank of the Willamette</figcaption></figure><figure class=""><picture>
+         <source type="image/webp" sizes="(max-width:820px) 50vw, 300px" srcset="/the-operative-group-site/assets/places/yaquina-head-card400.webp 400w, /the-operative-group-site/assets/places/yaquina-head-card.webp 800w">
+         <img src="/the-operative-group-site/assets/places/yaquina-head-card400.jpg" alt="Yaquina Head Lighthouse at Newport on the Oregon coast" width="800" height="600" loading="lazy" decoding="async"></picture>
+         <figcaption>Yaquina Head Lighthouse at Newport on the Oregon coast</figcaption></figure><figure class=""><picture>
+         <source type="image/webp" sizes="(max-width:820px) 50vw, 300px" srcset="/the-operative-group-site/assets/places/rogue-river-card400.webp 400w, /the-operative-group-site/assets/places/rogue-river-card.webp 800w">
+         <img src="/the-operative-group-site/assets/places/rogue-river-card400.jpg" alt="The Rogue River in southern Oregon" width="800" height="600" loading="lazy" decoding="async"></picture>
+         <figcaption>The Rogue River in southern Oregon</figcaption></figure>
+  </div>
+  <details class="credits">
+    <summary>Photo credits (9)</summary>
+    <ul><li>Crater Lake in southern Oregon — King of Hearts, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Crater_Lake_October_2019_005.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Cannon Beach on the northern Oregon coast — Dima Sergiyenko; Please attribute this image as the work of &quot;DiscoverW, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Cannon_Beach,_Oregon_(looking_northwest).jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Smith Rock State Park in central Oregon — Dougtone, <a href="https://creativecommons.org/licenses/by-sa/2.0/" rel="license nofollow noopener">CC BY-SA 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Smith_Rock_State_Park_-_Oregon_-_6015803934.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Mount Hood above the Hood River valley — Rizka, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Mount_Hood_(Oregon).jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>The Painted Hills in eastern Oregon — Finetooth, <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license nofollow noopener">CC BY-SA 3.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:East_face_painted_hills_panorama.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>A vineyard in the Salem Hills, Willamette Valley — WillametteValleyVineyards1983, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Willamette_Valley_Vineyards_Estate_in_the_Salem_Hills.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Portland from the east bank of the Willamette — PortlandAppraisalBlog, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:McCormick_Pier_condominiums_from_east_bank_Willamette_River_Portland_2025.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>Yaquina Head Lighthouse at Newport on the Oregon coast — Timbabcock64, <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license nofollow noopener">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Yaquina_Head_Lighthouse_(external).jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li><li>The Rogue River in southern Oregon — Hamad Darwish from Medford, Oregon, USA, <a href="https://creativecommons.org/licenses/by/2.0/" rel="license nofollow noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Rogue_River_Oregon_USA.jpg" rel="nofollow noopener">Wikimedia Commons</a>; cropped and resized.</li></ul>
+  </details>
+ </div>
+</section>
+
+<section class="band">
+  <svg class="arrow band__mark" style="" viewBox="0 0 1052 1037" aria-hidden="true" focusable="false"><path d="M45 163H710a175 175 0 0 1 175 175v666"/><path d="M125 924 790 259"/></svg>
+  <div class="wrap band__in">
+    <div>
+      <span class="lbl">Next step</span>
+      <h2 style="margin:16px 0 14px">Start with a conversation, not a form.</h2>
+      <p class="dek" style="margin:0">Tell us the situation. We’ll tell you honestly what we would do if it were ours — and if what you need is an attorney or a lender, not an agent, we’ll say that too.</p>
+    </div>
+    <div class="acts">
+      <a class="btn btn--go" href="https://calendly.com/theoperativegroup/talkwithdan" rel="noopener">Schedule a meeting <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a class="btn btn--ghost" href="tel:+14582090163">458.209.0163</a>
+    </div>
+  </div>
+</section>
+</main><footer class="ftr">
+  <div class="wrap">
+    <div class="ftr__top">
+      <div>
+        <div class="ftr__logo"><img src="/the-operative-group-site/assets/brand/tog-lockup-white.png" alt="The Operative Group" width="92" height="34"></div>
+        <p class="tiny" style="max-width:38ch;margin-bottom:18px">Help every family in Lane County make wise real estate decisions, with fiduciary representation, transparent and timely communication, and superior negotiation.</p>
+        <p style="margin:0 0 6px;font-weight:700;font-size:1.15rem"><a href="tel:+14582090163">458.209.0163</a></p>
+        <p style="margin:0 0 18px;color:var(--on-dark-dim)"><a href="mailto:dan@theoperativegroup.com">dan@theoperativegroup.com</a></p>
+        <div class="ftr__badges">
+          <img src="/the-operative-group-site/assets/brand/equal-housing.png" alt="Equal Housing Opportunity" width="84" height="38" loading="lazy">
+        </div>
+      </div>
+      <div><h4>Leaving</h4><ul><li><a href="/the-operative-group-site/sell/">Sell a house</a></li><li><a href="/the-operative-group-site/sell/four-exits/">The four exits</a></li><li><a href="/the-operative-group-site/probate/">Probate & trust</a></li><li><a href="/the-operative-group-site/downsize/">Downsize</a></li><li><a href="/the-operative-group-site/relocate/leaving-oregon/">Leaving Oregon</a></li></ul></div>
+      <div><h4>Entering</h4><ul><li><a href="/the-operative-group-site/buy/">Buy a house</a></li><li><a href="/the-operative-group-site/invest/">Invest</a></li><li><a href="/the-operative-group-site/relocate/moving-to-oregon/">Moving to Oregon</a></li><li><a href="/the-operative-group-site/join/">Join the team</a></li><li><a href="/the-operative-group-site/tools/">Tools & calculators</a></li></ul></div>
+      <div><h4>The firm</h4><ul><li><a href="/the-operative-group-site/about/">About</a></li><li><a href="/the-operative-group-site/about/approach/">The method</a></li><li><a href="/the-operative-group-site/agents/">The team</a></li><li><a href="/the-operative-group-site/reviews/">Reviews</a></li><li><a href="/the-operative-group-site/oregon/">All of Oregon</a></li><li><a href="/the-operative-group-site/areas/">Lane County</a></li><li><a href="/the-operative-group-site/contact/">Contact</a></li></ul></div>
+    </div>
+    <div class="ftr__bot">
+      <p>&copy; 2026 The Operative Group · REAL Broker · Lane County, Oregon. Equal Housing Opportunity. All brokers are licensed in the State of Oregon. Market figures carry their source and date on the page where they appear; they’re not a valuation of any specific property. Real estate commissions are negotiable and are not set by law or by any association. Nothing here’s legal, tax or investment advice.</p>
+      <p class="mono" style="display:flex;gap:16px"><a href="/the-operative-group-site/privacy/">Privacy</a><a href="/the-operative-group-site/terms/">Terms</a><a href="/the-operative-group-site/accessibility/">Accessibility</a><a href="/the-operative-group-site/sitemap/">Sitemap</a></p>
+    </div>
+  </div>
+</footer><script>
+(function(){
+  var b=document.getElementById('burger'),m=document.getElementById('mnav');
+  if(b&&m)b.addEventListener('click',function(){
+    var o=m.hasAttribute('data-open');
+    if(o){m.removeAttribute('data-open');b.setAttribute('aria-expanded','false');}
+    else{m.setAttribute('data-open','');b.setAttribute('aria-expanded','true');}
+  });
+  var p=document.getElementById('prog');
+  if(p)addEventListener('scroll',function(){
+    var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
+    p.style.width=(max>0?(h.scrollTop/max)*100:0)+'%';
+  },{passive:true});
+  var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var els=document.querySelectorAll('[data-rv]');
+  if(rm||!('IntersectionObserver'in window)){els.forEach(function(e){e.setAttribute('data-in','')});}
+  else{
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){
+      if(e.isIntersecting){e.target.setAttribute('data-in','');io.unobserve(e.target);}
+    })},{rootMargin:'0px 0px -8% 0px',threshold:.06});
+    els.forEach(function(e,i){e.style.transitionDelay=(Math.min(i,6)*45)+'ms';io.observe(e)});
+  }
+  document.querySelectorAll('.hero__mark path').forEach(function(p){
+    try{var L=p.getTotalLength();p.style.setProperty('--len',L);}catch(e){}
+  });
+})();
+</script></body></html>

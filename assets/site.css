@@ -60,6 +60,8 @@
   --on-dark-faint:var(--ink-3);
 
   /* button surfaces, so a ghost button can never end up white on white */
+  --go-bg:var(--green);
+  --go-fg:#132009;
   --ghost-bg:#ffffff;
   --ghost-fg:var(--ink);
   --ghost-line:var(--line);
@@ -93,6 +95,8 @@
   --on-dark-dim:#B7C4B7;
   --on-dark-faint:#8D9C8F;
   --shadow:none; --shadow-lg:none;
+  --go-bg:var(--green);
+  --go-fg:#132009;
   --ghost-bg:transparent;
   --ghost-fg:#ffffff;
   --ghost-line:rgba(255,255,255,.28);
@@ -198,8 +202,8 @@ a.hl:hover{text-decoration:underline;text-underline-offset:3px}
   font-weight:700;font-size:15.5px;letter-spacing:-.012em;border:1.5px solid transparent;cursor:pointer;
   transition:transform .16s,background .18s,border-color .18s,color .18s,box-shadow .18s}
 .btn:hover{transform:translateY(-1px)}
-.btn--go{background:var(--green);color:#132009;box-shadow:0 6px 18px -8px rgba(132,196,65,.8)}
-.btn--go:hover{background:#94D24E}
+.btn--go{background:var(--go-bg);color:var(--go-fg);box-shadow:0 6px 18px -8px rgba(132,196,65,.55)}
+.btn--go:hover{filter:brightness(1.08)}
 .btn--ghost{border-color:var(--ghost-line);color:var(--ghost-fg);background:var(--ghost-bg)}
 .btn--ghost:hover{border-color:currentColor;color:var(--ghost-fg-hover);background:var(--ghost-bg-hover)}
 .btn--ink{background:var(--ink-btn-bg);color:var(--ink-btn-fg)}
@@ -579,6 +583,16 @@ a.agent:hover .agent__n{color:var(--green-ink)}
   .btn:hover,.card:hover,.vec__card:hover,.index a:hover{transform:none}
   a.agent:hover .agent__ph img{transform:none}
 }
+
+.switcher{position:sticky;top:74px;z-index:55;display:flex;flex-wrap:wrap;align-items:center;gap:6px;
+  padding:10px clamp(14px,4vw,28px);background:var(--forest);color:#fff;
+  font-family:var(--body);font-size:13.5px;font-weight:600}
+.switcher__lbl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.6;margin-right:6px}
+.switcher a{padding:6px 12px;border-radius:999px;color:rgba(255,255,255,.72);border:1px solid transparent}
+.switcher a:hover{color:#fff;background:rgba(255,255,255,.10)}
+.switcher a[aria-current]{background:var(--green);color:#132009}
+.switcher__live{margin-left:auto;border-color:rgba(255,255,255,.28)!important}
+@media (max-width:640px){.switcher{top:74px;font-size:12.5px}.switcher__live{margin-left:0}}
 
 .prog{position:fixed;left:0;top:0;height:3px;width:0;background:var(--green);z-index:100;transition:width .1s linear}
 .skip{position:absolute;left:-9999px;top:0;background:var(--green);color:#132009;padding:10px 16px;z-index:200;font-weight:700}
