@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Bold — style option | The Operative Group</title>
-<meta name="description" content="Their own Bebas headline face at full volume. Hard edges, big blocks, no apology. One of five design directions for theoperativegroup.com, shown on the real.">
-<link rel="canonical" href="https://www.theoperativegroup.com/styles/bold/">
+<title>Broadcast — style option | The Operative Group</title>
+<meta name="description" content="The SERHANT school. Heavy geometric sans on black, full-bleed hero, media-company confidence. One of six design directions for theoperativegroup.com, shown.">
+<link rel="canonical" href="https://www.theoperativegroup.com/styles/broadcast/">
 <meta name="robots" content="noindex,follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Bold — style option | The Operative Group">
-<meta property="og:description" content="Their own Bebas headline face at full volume. Hard edges, big blocks, no apology. One of five design directions for theoperativegroup.com, shown on the real.">
-<meta property="og:url" content="https://www.theoperativegroup.com/styles/bold/">
+<meta property="og:title" content="Broadcast — style option | The Operative Group">
+<meta property="og:description" content="The SERHANT school. Heavy geometric sans on black, full-bleed hero, media-company confidence. One of six design directions for theoperativegroup.com, shown.">
+<meta property="og:url" content="https://www.theoperativegroup.com/styles/broadcast/">
 <meta property="og:site_name" content="The Operative Group">
 <meta property="og:image" content="https://www.theoperativegroup.com/assets/brand/tog-lockup-color.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,37 +21,104 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/the-operative-group-site/assets/site.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter+Tight:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Inter:wght@400;500;600&display=swap">
 <style>
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;isolation:isolate;
+  background:var(--forest);border-bottom:0}
+.hero__in{position:static;width:100%;padding-block:clamp(120px,15vh,190px) clamp(56px,8vh,90px)}
+.hero__split{display:block}
+/* The photograph covers the FIRST SCREEN, not the whole section. The hero is far
+   taller than the viewport once the path cards are inside it, and stretching one
+   crop over all of it zooms into a featureless slice of sky. Below the first
+   screen the section falls through to a solid dark ground. */
+.hero__photo{position:absolute;top:0;left:0;right:0;height:100svh;z-index:-2;
+  border-radius:0;box-shadow:none;overflow:hidden}
+.hero__photo picture,.hero__photo img{width:100%;height:100%;display:block}
+.hero__photo img{aspect-ratio:auto;object-fit:cover;object-position:center 45%}
+.hero::after{content:"";position:absolute;top:0;left:0;right:0;height:100svh;z-index:-1;
+  background:linear-gradient(180deg,rgba(8,12,9,.58) 0%,rgba(8,12,9,.34) 30%,
+    rgba(8,12,9,.66) 72%,var(--forest) 100%)}
+.hero .credit{position:absolute;right:var(--gut);bottom:12px;max-width:44ch;text-align:right;
+  color:rgba(255,255,255,.5);font-size:10.5px;margin:0}
+/* A full-bleed hero is a dark surface, so it re-points the same tokens the
+   .dark/.band block does — otherwise accent colours tuned for paper land on it. */
+.hero.hero{--ink:#fff;--ink-2:rgba(255,255,255,.82);--ink-3:rgba(255,255,255,.62);
+  --green-ink:#A8DC5E;--green-deep:#A8DC5E;--clay-ink:#DCB068;
+  --line:rgba(255,255,255,.20);--line-2:rgba(255,255,255,.14);
+  --ghost-bg:transparent;--ghost-fg:#fff;--ghost-line:rgba(255,255,255,.34)}
+.hero h1,.hero h2{color:#fff}
+.hero h1 em{color:#fff}
+.hero .dek,.hero__dek{color:rgba(255,255,255,.82)}
+.hero .lbl{color:#fff;opacity:.9}
+.hero__meta span{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.22);color:#fff;
+  backdrop-filter:blur(8px)}
+.hero__mark{display:none}
+.vec{margin-top:clamp(44px,7vh,78px)}
+.vec__head .tiny{color:rgba(255,255,255,.65)}
+.vec__card{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.20);
+  backdrop-filter:blur(14px) saturate(120%);box-shadow:none}
+.vec__card:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.34);transform:translateY(-3px)}
+.vec__name{color:#fff}
+.vec__line{color:rgba(255,255,255,.78)}
+.vec__dir{color:rgba(255,255,255,.62)}
+.vec__dir i{color:#fff}
+.vec__go{color:rgba(255,255,255,.80)}
+.vec__card:hover .vec__go{color:#fff}
+.hero .btn--go{--go-bg:#ffffff;--go-fg:#101410}
+.hero .btn--go:hover{--go-bg:#E8EDE6}
+.hero .btn--ghost{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.34);color:#fff;
+  backdrop-filter:blur(8px)}
+.hero .btn--ghost:hover{background:rgba(255,255,255,.20);color:#fff}
+@media (max-width:760px){
+  .hero{min-height:100svh}
+  .hero__in{padding-block:clamp(96px,16vh,150px) clamp(44px,7vh,64px)}
+  .hero .lbl{letter-spacing:.16em}
+  .hero .credit{position:static;text-align:left;margin-top:22px;max-width:none}
+}
 :root{
-  --paper:#F4F4F1; --paper-2:#E8E8E3; --paper-3:#D8D8D1; --sand:#EDEDE8;
-  --forest:#0E0E0C; --forest-2:#1A1A17; --ink:#0E0E0C; --ink-2:#44443E; --ink-3:#67675F;
-  --green:#7BD121; --green-ink:#3F6E12; --green-soft:#E6F6D2;
-  --line:rgba(14,14,12,.20); --line-2:rgba(14,14,12,.12);
-  --display:'Bebas Neue',Impact,sans-serif; --body:'Inter Tight',system-ui,sans-serif;
-  --label:'Inter Tight',sans-serif;
-  --r:0px; --r-sm:0px; --r-lg:0px; --r-pill:0px; --max:1300px;
+  --paper:#0A0A0A; --paper-2:#141414; --paper-3:#1F1F1F; --sand:#141414;
+  --forest:#000000; --forest-2:#0E0E0E; --ink:#FFFFFF; --ink-2:#B4B4B4; --ink-3:#8A8A8A;
+  --green:#9BE03F; --green-ink:#9BE03F; --green-soft:rgba(155,224,63,.12);
+  --clay:#C8A24A; --clay-ink:#D9B667; --clay-soft:rgba(200,162,74,.14);
+  --line:rgba(255,255,255,.14); --line-2:rgba(255,255,255,.10);
+  --display:'Montserrat',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif;
+  --label:'Montserrat',sans-serif;
+  --go-bg:#9BE03F; --go-fg:#0A0A0A;
+  --ghost-bg:transparent; --ghost-fg:#fff; --ghost-line:rgba(255,255,255,.3);
+  --ghost-bg-hover:rgba(255,255,255,.1); --ghost-fg-hover:#9BE03F;
+  --ink-btn-bg:#fff; --ink-btn-fg:#0A0A0A;
+  --r:0px; --r-sm:0px; --r-lg:0px; --max:1340px;
   --shadow:none; --shadow-lg:none;
 }
-h1,h2,h3,h4{font-family:var(--display);font-weight:400;letter-spacing:.005em;text-transform:uppercase}
-h1{font-size:clamp(3.6rem,10vw,8rem);line-height:.88}
-h2{font-size:clamp(2.6rem,6vw,4.6rem);line-height:.92}
-h3{font-size:1.6rem;line-height:1}
-.exit__name,.vec__name,.pcard__t{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.01em;font-size:1.5rem;line-height:1}
-.lbl{font-family:var(--label);font-weight:700;font-size:11px;letter-spacing:.18em}
-.lbl::before{height:3px;width:20px;border-radius:0}
-.btn{border-radius:0;font-family:var(--label);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:13px;padding:16px 26px}
-.btn--go{box-shadow:none}
-.card,.pcard,.exit,.step,.panel,.vec__card,.proof__i,.tool,.data,.figure,.mosaic figure,
-.hero__photo,.teamphoto,.pcard__img{border-radius:0}
-.card,.pcard,.exit,.step,.vec__card,.proof__i{border-width:2px;border-color:var(--ink)}
-.proof__n{font-size:clamp(3rem,5vw,4.4rem);color:var(--ink)}
-.proof__i{background:var(--green);border-color:var(--ink)}
-.proof__n,.proof__u,.proof__l,.proof__s{color:#0E0E0C}
-.hero{background:var(--paper)}
-.hero__mark{opacity:.14}
-.spec dd{font-family:var(--label);font-weight:700;text-transform:uppercase;font-size:12.5px;letter-spacing:.04em}
-.dark,.band,.ftr,.hubhero{--paper:#0E0E0C}
+body{background:#0A0A0A;color:#fff}
+h1,h2,h3,h4{font-family:var(--display);font-weight:800;letter-spacing:-.028em}
+h1{font-size:clamp(3rem,7.4vw,6rem);line-height:.98}
+h2{font-size:clamp(2.2rem,4.6vw,3.8rem);line-height:1.02}
+.lbl{font-family:var(--label);font-weight:600;font-size:11px;letter-spacing:.2em;color:#9BE03F}
+.lbl::before{background:#9BE03F;height:2px;width:22px;border-radius:0}
+.hdr{background:rgba(10,10,10,.82);border-bottom-color:rgba(255,255,255,.1)}
+.nav a{color:#B4B4B4}.nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav a[aria-current]{color:#9BE03F;background:rgba(155,224,63,.12)}
+.hdr__logo img{content:url(/the-operative-group-site/assets/brand/tog-lockup-white.png)}
+.hdr__tel{background:#9BE03F;color:#0A0A0A}
+.btn{border-radius:0;font-family:var(--label);font-weight:700;font-size:12.5px;
+  letter-spacing:.1em;text-transform:uppercase;padding:17px 28px;box-shadow:none}
+.card,.pcard,.exit,.step,.panel,.proof__i,.tool,.data,.index a,.figure,
+.mosaic figure,.teamphoto,.pcard__img,.chip,.opt,.out,.legal{border-radius:0}
+.card,.pcard,.exit,.step,.panel,.proof__i,.tool,.data,.index a,.out,.legal,.opt,.chip,
+.field input,.field select{background:#141414;border-color:rgba(255,255,255,.12)}
+.proof__n{font-family:var(--display);font-weight:900;color:#9BE03F;font-size:clamp(2.6rem,4.2vw,3.6rem)}
+.proof__u{font-family:var(--label);font-weight:700;letter-spacing:.16em;color:#fff;font-size:11px}
+.proof__l{color:#B4B4B4}.proof__s{color:#8A8A8A}
+.prose p,.prose ul li{color:#B4B4B4}.prose strong{color:#fff}
+.note{background:rgba(155,224,63,.10);border-left-color:#9BE03F;color:#fff}
+.faq,.faq details{border-color:rgba(255,255,255,.12)}
+.data__v,.spec dd[data-best]{color:#9BE03F}.spec dd{color:#fff}
+.band,.ftr{background:#000}
+.hubhero__bg img{opacity:.42}
+.teamphoto{background:#fff}
+.agent__ph--none{background:rgba(155,224,63,.14);color:#9BE03F}
+.sec{padding-block:clamp(70px,9vw,128px)}
 </style>
 
 </head>
@@ -76,7 +143,7 @@ h3{font-size:1.6rem;line-height:1}
   </div>
 </div><main id="main"><nav class="switcher" aria-label="Style options">
     <span class="switcher__lbl">Style</span>
-    <a href="/the-operative-group-site/styles/editorial/">Editorial</a><a href="/the-operative-group-site/styles/bold/" aria-current="page">Bold</a><a href="/the-operative-group-site/styles/quiet/">Quiet</a><a href="/the-operative-group-site/styles/dark/">Dark</a><a href="/the-operative-group-site/styles/grid/">Grid</a>
+    <a href="/the-operative-group-site/styles/estate/">Estate</a><a href="/the-operative-group-site/styles/boutique/">Boutique</a><a href="/the-operative-group-site/styles/broadcast/" aria-current="page">Broadcast</a><a href="/the-operative-group-site/styles/cinematic/">Cinematic</a><a href="/the-operative-group-site/styles/gallery/">Gallery</a><a href="/the-operative-group-site/styles/grid/">Grid</a>
     <a href="/the-operative-group-site/" class="switcher__live">Current</a>
   </nav>
 <section class="hero">
@@ -101,6 +168,10 @@ h3{font-size:1.6rem;line-height:1}
     <figure style="margin:0">
   <div class="hero__photo">
    <picture>
+    <source type="image/webp" media="(max-width:760px)" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero-m.webp">
+    <source type="image/jpeg" media="(max-width:760px)" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero-m.jpg">
+    <source type="image/webp" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero.webp">
+    <source type="image/jpeg" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero.jpg">
     <source type="image/webp" sizes="(max-width:900px) 100vw, 1100px" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-700.webp 700w, /the-operative-group-site/assets/places/eugene-spencer-butte.webp 1200w">
     <source type="image/jpeg" sizes="(max-width:900px) 100vw, 1100px" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-700.jpg 700w, /the-operative-group-site/assets/places/eugene-spencer-butte.jpg 1200w">
     <img src="/the-operative-group-site/assets/places/eugene-spencer-butte.jpg" alt="Eugene, Oregon with Spencer Butte rising to the south" width="1200" height="675" loading="eager" fetchpriority="high">

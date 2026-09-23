@@ -71,8 +71,11 @@
   --ink-btn-fg:#ffffff;
 }
 
-/* Anything inside a dark surface re-points the same tokens. */
-.dark, .band, .ftr, .band-photo__in, .hubhero{
+/* Anything inside a dark surface re-points the same tokens. The class is doubled
+   deliberately: a theme's own :root block loads after this file, and at equal
+   specificity it would silently win and paint dark-surface text in a light-surface
+   colour. Doubling puts this beyond the reach of any :root. */
+.dark.dark, .band.band, .ftr.ftr, .band-photo__in.band-photo__in, .hubhero.hubhero{
   --ground:var(--forest);
   --surface:rgba(255,255,255,.055);
   --surface-2:rgba(255,255,255,.085);

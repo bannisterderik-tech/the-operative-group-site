@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Editorial — style option | The Operative Group</title>
-<meta name="description" content="Serif headlines, cream paper, photography given room. Reads like a property magazine. One of five design directions for theoperativegroup.com, shown on the.">
-<link rel="canonical" href="https://www.theoperativegroup.com/styles/editorial/">
+<title>Boutique — style option | The Operative Group</title>
+<meta name="description" content="The Agency school. Playfair at light weight with italic emphasis inside the headline, one accent, editorial grids. One of six design directions for.">
+<link rel="canonical" href="https://www.theoperativegroup.com/styles/boutique/">
 <meta name="robots" content="noindex,follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Editorial — style option | The Operative Group">
-<meta property="og:description" content="Serif headlines, cream paper, photography given room. Reads like a property magazine. One of five design directions for theoperativegroup.com, shown on the.">
-<meta property="og:url" content="https://www.theoperativegroup.com/styles/editorial/">
+<meta property="og:title" content="Boutique — style option | The Operative Group">
+<meta property="og:description" content="The Agency school. Playfair at light weight with italic emphasis inside the headline, one accent, editorial grids. One of six design directions for.">
+<meta property="og:url" content="https://www.theoperativegroup.com/styles/boutique/">
 <meta property="og:site_name" content="The Operative Group">
 <meta property="og:image" content="https://www.theoperativegroup.com/assets/brand/tog-lockup-color.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,33 +21,94 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/the-operative-group-site/assets/site.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Lato:wght@300;400;700;900&display=swap">
 <style>
-:root{
-  --paper:#FBF7EF; --paper-2:#F3ECDF; --paper-3:#E7DCC8; --sand:#F6F0E3;
-  --forest:#20301F; --forest-2:#2B3E29; --ink:#1C2419; --ink-2:#4D5646; --ink-3:#646C59;
-  --green-ink:#41701E; --green-soft:#E8EFD8; --clay:#B4853C; --clay-ink:#7E5C1E;
-  --line:rgba(28,36,25,.16); --line-2:rgba(28,36,25,.10);
-  --display:'Fraunces',Georgia,serif; --body:'Inter',system-ui,sans-serif; --label:'Inter',sans-serif;
-  --r:4px; --r-sm:3px; --r-lg:6px; --max:1160px;
-  --go-bg:var(--ink); --go-fg:var(--paper);
-  --shadow:none; --shadow-lg:0 20px 50px -34px rgba(28,36,25,.5);
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;isolation:isolate;
+  background:var(--forest);border-bottom:0}
+.hero__in{position:static;width:100%;padding-block:clamp(120px,15vh,190px) clamp(56px,8vh,90px)}
+.hero__split{display:block}
+/* The photograph covers the FIRST SCREEN, not the whole section. The hero is far
+   taller than the viewport once the path cards are inside it, and stretching one
+   crop over all of it zooms into a featureless slice of sky. Below the first
+   screen the section falls through to a solid dark ground. */
+.hero__photo{position:absolute;top:0;left:0;right:0;height:100svh;z-index:-2;
+  border-radius:0;box-shadow:none;overflow:hidden}
+.hero__photo picture,.hero__photo img{width:100%;height:100%;display:block}
+.hero__photo img{aspect-ratio:auto;object-fit:cover;object-position:center 45%}
+.hero::after{content:"";position:absolute;top:0;left:0;right:0;height:100svh;z-index:-1;
+  background:linear-gradient(180deg,rgba(8,12,9,.58) 0%,rgba(8,12,9,.34) 30%,
+    rgba(8,12,9,.66) 72%,var(--forest) 100%)}
+.hero .credit{position:absolute;right:var(--gut);bottom:12px;max-width:44ch;text-align:right;
+  color:rgba(255,255,255,.5);font-size:10.5px;margin:0}
+/* A full-bleed hero is a dark surface, so it re-points the same tokens the
+   .dark/.band block does — otherwise accent colours tuned for paper land on it. */
+.hero.hero{--ink:#fff;--ink-2:rgba(255,255,255,.82);--ink-3:rgba(255,255,255,.62);
+  --green-ink:#A8DC5E;--green-deep:#A8DC5E;--clay-ink:#DCB068;
+  --line:rgba(255,255,255,.20);--line-2:rgba(255,255,255,.14);
+  --ghost-bg:transparent;--ghost-fg:#fff;--ghost-line:rgba(255,255,255,.34)}
+.hero h1,.hero h2{color:#fff}
+.hero h1 em{color:#fff}
+.hero .dek,.hero__dek{color:rgba(255,255,255,.82)}
+.hero .lbl{color:#fff;opacity:.9}
+.hero__meta span{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.22);color:#fff;
+  backdrop-filter:blur(8px)}
+.hero__mark{display:none}
+.vec{margin-top:clamp(44px,7vh,78px)}
+.vec__head .tiny{color:rgba(255,255,255,.65)}
+.vec__card{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.20);
+  backdrop-filter:blur(14px) saturate(120%);box-shadow:none}
+.vec__card:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.34);transform:translateY(-3px)}
+.vec__name{color:#fff}
+.vec__line{color:rgba(255,255,255,.78)}
+.vec__dir{color:rgba(255,255,255,.62)}
+.vec__dir i{color:#fff}
+.vec__go{color:rgba(255,255,255,.80)}
+.vec__card:hover .vec__go{color:#fff}
+.hero .btn--go{--go-bg:#ffffff;--go-fg:#101410}
+.hero .btn--go:hover{--go-bg:#E8EDE6}
+.hero .btn--ghost{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.34);color:#fff;
+  backdrop-filter:blur(8px)}
+.hero .btn--ghost:hover{background:rgba(255,255,255,.20);color:#fff}
+@media (max-width:760px){
+  .hero{min-height:100svh}
+  .hero__in{padding-block:clamp(96px,16vh,150px) clamp(44px,7vh,64px)}
+  .hero .lbl{letter-spacing:.16em}
+  .hero .credit{position:static;text-align:left;margin-top:22px;max-width:none}
 }
-h1,h2,h3{font-weight:600;letter-spacing:-.018em}
-h1{font-size:clamp(2.7rem,6.4vw,5rem);line-height:1.02}
-.lbl{font-family:var(--label);font-size:11.5px;letter-spacing:.2em;font-weight:600}
-.lbl::before{height:1px;width:26px;border-radius:0}
-.dek{font-size:clamp(1.08rem,1.6vw,1.26rem);line-height:1.62}
-.btn{border-radius:2px;font-weight:600;letter-spacing:.01em;padding:15px 26px}
-
-.card,.pcard,.exit,.step,.panel,.vec__card,.proof__i,.tool,.data{border-radius:3px}
-.pcard__t,.vec__name,.exit__name{font-family:var(--display);font-weight:600}
-.proof__n{font-family:var(--display);font-weight:600;letter-spacing:-.02em}
-.proof__u{font-family:var(--label);letter-spacing:.16em;font-size:11px}
-.data__v,.out__row span,.spec dd{font-family:var(--display);font-weight:600}
-.hero{background:radial-gradient(90% 70% at 86% 6%,rgba(180,133,60,.16),transparent 62%),var(--paper)}
-.hero__mark{opacity:.09}
-.mosaic figure,.figure,.hero__photo,.teamphoto{border-radius:3px}
+:root{
+  --paper:#FCFBF9; --paper-2:#F4F2EE; --paper-3:#E6E3DD; --sand:#F7F5F1;
+  --forest:#16181A; --forest-2:#212427; --ink:#16181A; --ink-2:#4B5053; --ink-3:#6C7174;
+  --green:#8CC63F; --green-ink:#45711F; --green-soft:#EDF4E0;
+  --clay:#A33B2A; --clay-ink:#8A2E1F; --clay-soft:#F7EAE6;
+  --line:rgba(22,24,26,.13); --line-2:rgba(22,24,26,.08);
+  --display:'Playfair Display',Georgia,serif; --body:'Lato',system-ui,sans-serif;
+  --label:'Lato',sans-serif;
+  --go-bg:var(--ink); --go-fg:var(--paper);
+  --r:0px; --r-sm:0px; --r-lg:0px; --max:1280px;
+  --shadow:none; --shadow-lg:0 26px 60px -44px rgba(22,24,26,.55);
+}
+body{font-weight:400;font-size:16.5px}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;letter-spacing:-.012em}
+h1{font-size:clamp(2.8rem,6.6vw,5.2rem);line-height:1.04}
+h2{font-size:clamp(2.1rem,4.2vw,3.4rem);line-height:1.1}
+h3{font-size:1.32rem;font-weight:400}
+h1 em,h2 em{font-style:italic;font-weight:400;color:inherit}
+.hero h1 em{color:#fff;font-style:italic}
+.lbl{font-family:var(--label);font-weight:700;font-size:11px;letter-spacing:.24em;color:var(--clay-ink)}
+.lbl::before{background:var(--clay);width:26px;height:1px;border-radius:0}
+.hero .lbl{color:#fff}.hero .lbl::before{background:#fff}
+.dek{font-size:1.06rem;line-height:1.74;font-weight:400}
+.btn{border-radius:0;font-family:var(--label);font-weight:700;font-size:12.5px;
+  letter-spacing:.12em;text-transform:uppercase;padding:16px 28px;box-shadow:none}
+.card,.pcard,.exit,.step,.panel,.vec__card,.proof__i,.tool,.data,.index a,.figure,
+.mosaic figure,.hero__photo,.teamphoto,.pcard__img,.chip{border-radius:0}
+.proof__i{background:transparent;border:0;border-top:2px solid var(--ink);padding:20px 0 0}
+.proof__n{font-family:var(--display);font-weight:400;font-size:clamp(2.5rem,3.8vw,3.4rem);color:var(--ink)}
+.proof__u{font-family:var(--label);font-weight:700;font-size:10.5px;letter-spacing:.2em;color:var(--clay-ink)}
+.exit__name,.pcard__t,.vec__name{font-family:var(--display);font-weight:400}
+.data__v,.spec dd,.out__row span{font-family:var(--display);font-weight:400}
+.sec{padding-block:clamp(70px,9.5vw,132px)}
+.band,.ftr{background:#16181A}
 </style>
 
 </head>
@@ -72,7 +133,7 @@ h1{font-size:clamp(2.7rem,6.4vw,5rem);line-height:1.02}
   </div>
 </div><main id="main"><nav class="switcher" aria-label="Style options">
     <span class="switcher__lbl">Style</span>
-    <a href="/the-operative-group-site/styles/editorial/" aria-current="page">Editorial</a><a href="/the-operative-group-site/styles/bold/">Bold</a><a href="/the-operative-group-site/styles/quiet/">Quiet</a><a href="/the-operative-group-site/styles/dark/">Dark</a><a href="/the-operative-group-site/styles/grid/">Grid</a>
+    <a href="/the-operative-group-site/styles/estate/">Estate</a><a href="/the-operative-group-site/styles/boutique/" aria-current="page">Boutique</a><a href="/the-operative-group-site/styles/broadcast/">Broadcast</a><a href="/the-operative-group-site/styles/cinematic/">Cinematic</a><a href="/the-operative-group-site/styles/gallery/">Gallery</a><a href="/the-operative-group-site/styles/grid/">Grid</a>
     <a href="/the-operative-group-site/" class="switcher__live">Current</a>
   </nav>
 <section class="hero">
@@ -97,6 +158,10 @@ h1{font-size:clamp(2.7rem,6.4vw,5rem);line-height:1.02}
     <figure style="margin:0">
   <div class="hero__photo">
    <picture>
+    <source type="image/webp" media="(max-width:760px)" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero-m.webp">
+    <source type="image/jpeg" media="(max-width:760px)" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero-m.jpg">
+    <source type="image/webp" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero.webp">
+    <source type="image/jpeg" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero.jpg">
     <source type="image/webp" sizes="(max-width:900px) 100vw, 1100px" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-700.webp 700w, /the-operative-group-site/assets/places/eugene-spencer-butte.webp 1200w">
     <source type="image/jpeg" sizes="(max-width:900px) 100vw, 1100px" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-700.jpg 700w, /the-operative-group-site/assets/places/eugene-spencer-butte.jpg 1200w">
     <img src="/the-operative-group-site/assets/places/eugene-spencer-butte.jpg" alt="Eugene, Oregon with Spencer Butte rising to the south" width="1200" height="675" loading="eager" fetchpriority="high">

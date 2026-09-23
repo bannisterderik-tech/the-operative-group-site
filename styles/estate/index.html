@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Grid — style option | The Operative Group</title>
-<meta name="description" content="Swiss discipline. Hairline gutters, colour blocks, hierarchy carried entirely by size and weight. One of six design directions for theoperativegroup.com.">
-<link rel="canonical" href="https://www.theoperativegroup.com/styles/grid/">
+<title>Estate — style option | The Operative Group</title>
+<meta name="description" content="The Kirman / Christie’s school. Didone serif in caps, near-white paper, brass. Quiet money. One of six design directions for theoperativegroup.com, shown on.">
+<link rel="canonical" href="https://www.theoperativegroup.com/styles/estate/">
 <meta name="robots" content="noindex,follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Grid — style option | The Operative Group">
-<meta property="og:description" content="Swiss discipline. Hairline gutters, colour blocks, hierarchy carried entirely by size and weight. One of six design directions for theoperativegroup.com.">
-<meta property="og:url" content="https://www.theoperativegroup.com/styles/grid/">
+<meta property="og:title" content="Estate — style option | The Operative Group">
+<meta property="og:description" content="The Kirman / Christie’s school. Didone serif in caps, near-white paper, brass. Quiet money. One of six design directions for theoperativegroup.com, shown on.">
+<meta property="og:url" content="https://www.theoperativegroup.com/styles/estate/">
 <meta property="og:site_name" content="The Operative Group">
 <meta property="og:image" content="https://www.theoperativegroup.com/assets/brand/tog-lockup-color.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,37 +21,95 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/the-operative-group-site/assets/site.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Narrow:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500;600&display=swap">
 <style>
-:root{
-  --paper:#F2F2EF; --paper-2:#E6E6E1; --paper-3:#D6D6D0; --sand:#EAEAE5;
-  --forest:#15251A; --forest-2:#1E3323; --ink:#14181A; --ink-2:#464E50; --ink-3:#5F676A;
-  --green-ink:#3D6B1B; --green-soft:#E3F0D3;
-  --line:rgba(20,24,26,.18); --line-2:rgba(20,24,26,.11);
-  --display:'Archivo',system-ui,sans-serif; --body:'Archivo',system-ui,sans-serif;
-  --label:'Archivo Narrow',sans-serif;
-  --r:0px; --r-sm:0px; --r-lg:0px; --r-pill:0px; --max:1320px;
-  --shadow:none; --shadow-lg:none;
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;isolation:isolate;
+  background:var(--forest);border-bottom:0}
+.hero__in{position:static;width:100%;padding-block:clamp(120px,15vh,190px) clamp(56px,8vh,90px)}
+.hero__split{display:block}
+/* The photograph covers the FIRST SCREEN, not the whole section. The hero is far
+   taller than the viewport once the path cards are inside it, and stretching one
+   crop over all of it zooms into a featureless slice of sky. Below the first
+   screen the section falls through to a solid dark ground. */
+.hero__photo{position:absolute;top:0;left:0;right:0;height:100svh;z-index:-2;
+  border-radius:0;box-shadow:none;overflow:hidden}
+.hero__photo picture,.hero__photo img{width:100%;height:100%;display:block}
+.hero__photo img{aspect-ratio:auto;object-fit:cover;object-position:center 45%}
+.hero::after{content:"";position:absolute;top:0;left:0;right:0;height:100svh;z-index:-1;
+  background:linear-gradient(180deg,rgba(8,12,9,.58) 0%,rgba(8,12,9,.34) 30%,
+    rgba(8,12,9,.66) 72%,var(--forest) 100%)}
+.hero .credit{position:absolute;right:var(--gut);bottom:12px;max-width:44ch;text-align:right;
+  color:rgba(255,255,255,.5);font-size:10.5px;margin:0}
+/* A full-bleed hero is a dark surface, so it re-points the same tokens the
+   .dark/.band block does — otherwise accent colours tuned for paper land on it. */
+.hero.hero{--ink:#fff;--ink-2:rgba(255,255,255,.82);--ink-3:rgba(255,255,255,.62);
+  --green-ink:#A8DC5E;--green-deep:#A8DC5E;--clay-ink:#DCB068;
+  --line:rgba(255,255,255,.20);--line-2:rgba(255,255,255,.14);
+  --ghost-bg:transparent;--ghost-fg:#fff;--ghost-line:rgba(255,255,255,.34)}
+.hero h1,.hero h2{color:#fff}
+.hero h1 em{color:#fff}
+.hero .dek,.hero__dek{color:rgba(255,255,255,.82)}
+.hero .lbl{color:#fff;opacity:.9}
+.hero__meta span{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.22);color:#fff;
+  backdrop-filter:blur(8px)}
+.hero__mark{display:none}
+.vec{margin-top:clamp(44px,7vh,78px)}
+.vec__head .tiny{color:rgba(255,255,255,.65)}
+.vec__card{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.20);
+  backdrop-filter:blur(14px) saturate(120%);box-shadow:none}
+.vec__card:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.34);transform:translateY(-3px)}
+.vec__name{color:#fff}
+.vec__line{color:rgba(255,255,255,.78)}
+.vec__dir{color:rgba(255,255,255,.62)}
+.vec__dir i{color:#fff}
+.vec__go{color:rgba(255,255,255,.80)}
+.vec__card:hover .vec__go{color:#fff}
+.hero .btn--go{--go-bg:#ffffff;--go-fg:#101410}
+.hero .btn--go:hover{--go-bg:#E8EDE6}
+.hero .btn--ghost{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.34);color:#fff;
+  backdrop-filter:blur(8px)}
+.hero .btn--ghost:hover{background:rgba(255,255,255,.20);color:#fff}
+@media (max-width:760px){
+  .hero{min-height:100svh}
+  .hero__in{padding-block:clamp(96px,16vh,150px) clamp(44px,7vh,64px)}
+  .hero .lbl{letter-spacing:.16em}
+  .hero .credit{position:static;text-align:left;margin-top:22px;max-width:none}
 }
-h1,h2,h3,h4{font-weight:700;letter-spacing:-.03em}
-h1{font-size:clamp(2.6rem,6vw,4.8rem);line-height:.98}
-h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1}
-.lbl{font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.14em}
-.lbl::before{height:2px;width:24px;border-radius:0}
-.btn{border-radius:0;font-weight:700;font-size:14.5px;padding:15px 24px;box-shadow:none}
-.card,.pcard,.exit,.step,.panel,.vec__card,.proof__i,.tool,.data,.index a,
-.figure,.mosaic figure,.hero__photo,.teamphoto,.pcard__img,.chip{border-radius:0}
-.vec__grid,.exits,.rail,.proof,.pcards{gap:1px;background:var(--line)}
-.vec__card,.exit,.step,.proof__i,.pcard{border:0}
-.proof__i{background:var(--paper)}
-.proof__n{font-family:var(--display);font-weight:700;letter-spacing:-.04em}
-.proof__u{font-family:var(--label);letter-spacing:.12em}
-.hero{background:var(--paper)}
-.hero__mark{opacity:.12}
-.index{gap:1px;background:var(--line)}
-.index a{border:0}
-.data__v,.spec dd{font-family:var(--display);font-weight:700}
-.mosaic{gap:1px}
+:root{
+  --paper:#FAFAF8; --paper-2:#F1F0EC; --paper-3:#E4E2DC; --sand:#F4F2EC;
+  --forest:#14140F; --forest-2:#1E1E17; --ink:#14140F; --ink-2:#4A4A42; --ink-3:#6B6B61;
+  --green:#8FBF4C; --green-ink:#4A6B22; --green-soft:#EDF2E2;
+  --clay:#A8883F; --clay-ink:#7A6122; --clay-soft:#F3EDDF;
+  --line:rgba(20,20,15,.14); --line-2:rgba(20,20,15,.09);
+  --display:'Bodoni Moda',Didot,Georgia,serif; --body:'Jost',system-ui,sans-serif;
+  --label:'Jost',sans-serif;
+  --go-bg:var(--ink); --go-fg:var(--paper);
+  --r:0px; --r-sm:0px; --r-lg:0px; --r-pill:0px; --max:1240px;
+  --shadow:none; --shadow-lg:0 30px 70px -48px rgba(20,20,15,.6);
+}
+body{font-weight:300;font-size:16.5px;letter-spacing:.005em}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;letter-spacing:.005em}
+h1{font-size:clamp(2.9rem,6.6vw,5.4rem);line-height:1.03}
+h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.08}
+h3{font-size:1.3rem;font-weight:400}
+.hero h1{text-transform:uppercase;letter-spacing:.02em;font-size:clamp(2.4rem,5.4vw,4.4rem);line-height:1.08}
+.hero h1 em{font-style:italic;text-transform:none;letter-spacing:0;color:#D8B979}
+.lbl{font-family:var(--label);font-weight:500;font-size:11px;letter-spacing:.3em;color:var(--clay-ink)}
+.lbl::before{background:var(--clay);width:30px;height:1px;border-radius:0}
+.hero .lbl::before{background:#D8B979}
+.dek{font-size:1.04rem;line-height:1.72;font-weight:300}
+.btn{border-radius:0;font-family:var(--label);font-weight:500;font-size:12.5px;
+  letter-spacing:.14em;text-transform:uppercase;padding:17px 30px;box-shadow:none}
+.card,.pcard,.exit,.step,.panel,.vec__card,.proof__i,.tool,.data,.index a,.figure,
+.mosaic figure,.hero__photo,.teamphoto,.pcard__img,.chip,.btn{border-radius:0}
+.proof__i{background:transparent;border:0;border-top:1px solid var(--line);padding:22px 0 0}
+.proof__n{font-family:var(--display);font-weight:400;font-size:clamp(2.4rem,3.6vw,3.2rem);color:var(--ink)}
+.proof__u{font-family:var(--label);font-size:10.5px;letter-spacing:.24em;font-weight:500;color:var(--clay-ink)}
+.exit__name,.pcard__t,.vec__name{font-family:var(--display);font-weight:400;letter-spacing:.005em}
+.data__v,.spec dd,.out__row span{font-family:var(--display);font-weight:400}
+.sec{padding-block:clamp(72px,10vw,140px)}
+.band,.ftr{background:#14140F}
+.band h2,.ftr h4{letter-spacing:.02em}
 </style>
 
 </head>
@@ -76,7 +134,7 @@ h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1}
   </div>
 </div><main id="main"><nav class="switcher" aria-label="Style options">
     <span class="switcher__lbl">Style</span>
-    <a href="/the-operative-group-site/styles/estate/">Estate</a><a href="/the-operative-group-site/styles/boutique/">Boutique</a><a href="/the-operative-group-site/styles/broadcast/">Broadcast</a><a href="/the-operative-group-site/styles/cinematic/">Cinematic</a><a href="/the-operative-group-site/styles/gallery/">Gallery</a><a href="/the-operative-group-site/styles/grid/" aria-current="page">Grid</a>
+    <a href="/the-operative-group-site/styles/estate/" aria-current="page">Estate</a><a href="/the-operative-group-site/styles/boutique/">Boutique</a><a href="/the-operative-group-site/styles/broadcast/">Broadcast</a><a href="/the-operative-group-site/styles/cinematic/">Cinematic</a><a href="/the-operative-group-site/styles/gallery/">Gallery</a><a href="/the-operative-group-site/styles/grid/">Grid</a>
     <a href="/the-operative-group-site/" class="switcher__live">Current</a>
   </nav>
 <section class="hero">

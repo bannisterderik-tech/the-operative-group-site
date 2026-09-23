@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Dark — style option | The Operative Group</title>
-<meta name="description" content="Near-black throughout, green and brass, photographs lit like stills. Investor-facing. One of five design directions for theoperativegroup.com, shown on the.">
-<link rel="canonical" href="https://www.theoperativegroup.com/styles/dark/">
+<title>Cinematic — style option | The Operative Group</title>
+<meta name="description" content="Photography first and last. Full-screen hero, full-bleed photo between every section, almost no interface. One of six design directions for.">
+<link rel="canonical" href="https://www.theoperativegroup.com/styles/cinematic/">
 <meta name="robots" content="noindex,follow">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Dark — style option | The Operative Group">
-<meta property="og:description" content="Near-black throughout, green and brass, photographs lit like stills. Investor-facing. One of five design directions for theoperativegroup.com, shown on the.">
-<meta property="og:url" content="https://www.theoperativegroup.com/styles/dark/">
+<meta property="og:title" content="Cinematic — style option | The Operative Group">
+<meta property="og:description" content="Photography first and last. Full-screen hero, full-bleed photo between every section, almost no interface. One of six design directions for.">
+<meta property="og:url" content="https://www.theoperativegroup.com/styles/cinematic/">
 <meta property="og:site_name" content="The Operative Group">
 <meta property="og:image" content="https://www.theoperativegroup.com/assets/brand/tog-lockup-color.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,51 +21,104 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/the-operative-group-site/assets/site.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Bebas+Neue&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Narrow:wght@500;600;700&display=swap">
 <style>
-:root{
-  --paper:#0C100D; --paper-2:#141A15; --paper-3:#1E271F; --sand:#141A15;
-  --forest:#080B09; --forest-2:#101512; --ink:#F2F6F0; --ink-2:#AFBBAE; --ink-3:#7E8B7E;
-  --green:#8FD94B; --green-ink:#8FD94B; --green-soft:rgba(143,217,75,.12);
-  --clay:#D6A650; --clay-ink:#DDB264; --clay-soft:rgba(214,166,80,.14);
-  --line:rgba(255,255,255,.13); --line-2:rgba(255,255,255,.09);
-  --ghost-bg:transparent; --ghost-fg:#F2F6F0; --ghost-line:rgba(255,255,255,.26);
-  --ghost-bg-hover:rgba(255,255,255,.07); --ghost-fg-hover:#8FD94B;
-  --ink-btn-bg:#F2F6F0; --ink-btn-fg:#0C100D;
-  --r:14px; --r-lg:22px; --max:1240px;
-  --shadow:0 1px 0 rgba(255,255,255,.04) inset; --shadow-lg:0 30px 70px -40px rgba(0,0,0,.9);
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;isolation:isolate;
+  background:var(--forest);border-bottom:0}
+.hero__in{position:static;width:100%;padding-block:clamp(120px,15vh,190px) clamp(56px,8vh,90px)}
+.hero__split{display:block}
+/* The photograph covers the FIRST SCREEN, not the whole section. The hero is far
+   taller than the viewport once the path cards are inside it, and stretching one
+   crop over all of it zooms into a featureless slice of sky. Below the first
+   screen the section falls through to a solid dark ground. */
+.hero__photo{position:absolute;top:0;left:0;right:0;height:100svh;z-index:-2;
+  border-radius:0;box-shadow:none;overflow:hidden}
+.hero__photo picture,.hero__photo img{width:100%;height:100%;display:block}
+.hero__photo img{aspect-ratio:auto;object-fit:cover;object-position:center 45%}
+.hero::after{content:"";position:absolute;top:0;left:0;right:0;height:100svh;z-index:-1;
+  background:linear-gradient(180deg,rgba(8,12,9,.58) 0%,rgba(8,12,9,.34) 30%,
+    rgba(8,12,9,.66) 72%,var(--forest) 100%)}
+.hero .credit{position:absolute;right:var(--gut);bottom:12px;max-width:44ch;text-align:right;
+  color:rgba(255,255,255,.5);font-size:10.5px;margin:0}
+/* A full-bleed hero is a dark surface, so it re-points the same tokens the
+   .dark/.band block does — otherwise accent colours tuned for paper land on it. */
+.hero.hero{--ink:#fff;--ink-2:rgba(255,255,255,.82);--ink-3:rgba(255,255,255,.62);
+  --green-ink:#A8DC5E;--green-deep:#A8DC5E;--clay-ink:#DCB068;
+  --line:rgba(255,255,255,.20);--line-2:rgba(255,255,255,.14);
+  --ghost-bg:transparent;--ghost-fg:#fff;--ghost-line:rgba(255,255,255,.34)}
+.hero h1,.hero h2{color:#fff}
+.hero h1 em{color:#fff}
+.hero .dek,.hero__dek{color:rgba(255,255,255,.82)}
+.hero .lbl{color:#fff;opacity:.9}
+.hero__meta span{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.22);color:#fff;
+  backdrop-filter:blur(8px)}
+.hero__mark{display:none}
+.vec{margin-top:clamp(44px,7vh,78px)}
+.vec__head .tiny{color:rgba(255,255,255,.65)}
+.vec__card{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.20);
+  backdrop-filter:blur(14px) saturate(120%);box-shadow:none}
+.vec__card:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.34);transform:translateY(-3px)}
+.vec__name{color:#fff}
+.vec__line{color:rgba(255,255,255,.78)}
+.vec__dir{color:rgba(255,255,255,.62)}
+.vec__dir i{color:#fff}
+.vec__go{color:rgba(255,255,255,.80)}
+.vec__card:hover .vec__go{color:#fff}
+.hero .btn--go{--go-bg:#ffffff;--go-fg:#101410}
+.hero .btn--go:hover{--go-bg:#E8EDE6}
+.hero .btn--ghost{background:rgba(255,255,255,.10);border-color:rgba(255,255,255,.34);color:#fff;
+  backdrop-filter:blur(8px)}
+.hero .btn--ghost:hover{background:rgba(255,255,255,.20);color:#fff}
+@media (max-width:760px){
+  .hero{min-height:100svh}
+  .hero__in{padding-block:clamp(96px,16vh,150px) clamp(44px,7vh,64px)}
+  .hero .lbl{letter-spacing:.16em}
+  .hero .credit{position:static;text-align:left;margin-top:22px;max-width:none}
 }
-body{background:var(--paper);color:var(--ink)}
-.hdr{background:rgba(12,16,13,.78);border-bottom-color:rgba(255,255,255,.08)}
-.nav a{color:var(--ink-2)} .nav a:hover{color:#fff;background:rgba(255,255,255,.06)}
-.hdr__logo img{content:url(/the-operative-group-site/assets/brand/tog-lockup-white.png)}
-.hdr__tel{background:#8FD94B;color:#0C100D}
-.hdr__tel:hover{background:#A3E566}
-.card,.pcard,.exit,.step,.panel,.vec__card,.proof__i,.tool,.data,.index a,.chip,.opt{
-  background:#161B17;border-color:rgba(255,255,255,.11)}
-.legal,.out,.field input,.field select{background:#12160F}
-.pcard__img,.figure,.mosaic figure{background:#141A15}
-.hero{background:radial-gradient(100% 80% at 82% 4%,rgba(143,217,75,.16),transparent 60%),var(--paper)}
-.hero__mark{opacity:.2}
-.proof__n,.data__v,.out__row span,.spec dd[data-best]{color:#8FD94B}
-.prose p,.prose ul li{color:var(--ink-2)}
-.prose strong,.spec dd{color:#fff}
-.legal{border-color:rgba(255,255,255,.10);color:var(--ink-2)}
-.note{background:#17220F;border-left-color:#8FD94B;color:var(--ink)}
-.faq,.faq details{border-color:rgba(255,255,255,.10)}
-.band,.ftr{background:#060806}
-.hubhero__bg img{opacity:.5}
-.credits li,.credit{color:var(--ink-3)}
-.index a{color:var(--ink)}
-.chip{border-color:rgba(255,255,255,.16);color:var(--ink-2)}
-.field input,.field select{border-color:rgba(255,255,255,.20);color:var(--ink)}
-.out{border-color:rgba(255,255,255,.11)}
-.opt{border-color:rgba(255,255,255,.22);color:var(--ink)}
-.opt[aria-pressed="true"]{background:#8FD94B;color:#0C100D;border-color:#8FD94B}
-.agent__ph--none{background:rgba(143,217,75,.14);color:#8FD94B}
-.teamphoto{background:#F4F4F1}
-.hero__meta span{background:#161B17;border-color:rgba(255,255,255,.16);color:var(--ink-2)}
-.credits{border-color:rgba(255,255,255,.10)}
+:root{
+  --paper:#F7F6F3; --paper-2:#EDEBE6; --paper-3:#DFDCD5; --sand:#F1EFEA;
+  --forest:#101512; --forest-2:#1A211C; --ink:#131714; --ink-2:#464E49; --ink-3:#5E6761;
+  --green-ink:#3E6B1E; --green-soft:#E8F1DB;
+  --line:rgba(19,23,20,.13); --line-2:rgba(19,23,20,.08);
+  --display:'Archivo',system-ui,sans-serif; --body:'Archivo',system-ui,sans-serif;
+  --label:'Archivo Narrow',sans-serif;
+  --r:0px; --r-sm:0px; --r-lg:0px; --max:100%;
+  --gut:clamp(20px,5vw,72px);
+  --shadow:none; --shadow-lg:none;
+}
+h1,h2,h3,h4{font-weight:700;letter-spacing:-.034em}
+h1{font-size:clamp(3rem,7.6vw,6.4rem);line-height:.96}
+h2{font-size:clamp(2.2rem,5vw,4rem);line-height:1}
+.lbl{font-family:var(--label);font-weight:700;font-size:11.5px;letter-spacing:.2em}
+.lbl::before{height:2px;width:22px;border-radius:0}
+.btn{border-radius:0;font-family:var(--label);font-weight:700;font-size:13px;
+  letter-spacing:.08em;text-transform:uppercase;padding:17px 28px;box-shadow:none}
+.card,.pcard,.exit,.step,.panel,.vec__card,.proof__i,.tool,.data,.index a,.figure,
+.mosaic figure,.teamphoto,.pcard__img,.chip{border-radius:0}
+.wrap{max-width:1500px}
+.prose{max-width:66ch;margin-inline:auto}
+.sec{padding-block:clamp(76px,11vw,160px)}
+/* photography gets the whole width */
+.figure img,.figure picture{width:100%}
+.figure--wide img{aspect-ratio:21/9}
+.band-photo img{filter:saturate(1.05)}
+.band-photo__in{padding-block:clamp(120px,18vw,260px)}
+.mosaic{grid-auto-rows:clamp(150px,18vw,280px);gap:2px}
+.pcards{gap:2px}
+.pcard{border:0;background:var(--paper-2)}
+.pcard__img{aspect-ratio:3/2}
+.pcard__body{padding:18px 20px 22px}
+.proof{gap:1px;background:var(--line)}
+.proof__i{background:var(--paper);border:0}
+.proof__n{font-weight:800;letter-spacing:-.04em;font-size:clamp(2.6rem,4vw,3.6rem)}
+.exits,.rail,.index{gap:1px;background:var(--line)}
+.exit,.step,.index a{border:0;background:var(--paper)}
+/* the path cards stay glass — they sit on the hero photograph, not on paper */
+.vec__grid{gap:1px;background:rgba(255,255,255,.14)}
+.hubhero{min-height:74svh;display:flex;align-items:flex-end}
+.hubhero__bg img{opacity:.62}
+.hubhero__bg::after{background:linear-gradient(180deg,rgba(10,16,11,.55),rgba(10,16,11,.86))}
+.band,.ftr{background:#101512}
 </style>
 
 </head>
@@ -90,7 +143,7 @@ body{background:var(--paper);color:var(--ink)}
   </div>
 </div><main id="main"><nav class="switcher" aria-label="Style options">
     <span class="switcher__lbl">Style</span>
-    <a href="/the-operative-group-site/styles/editorial/">Editorial</a><a href="/the-operative-group-site/styles/bold/">Bold</a><a href="/the-operative-group-site/styles/quiet/">Quiet</a><a href="/the-operative-group-site/styles/dark/" aria-current="page">Dark</a><a href="/the-operative-group-site/styles/grid/">Grid</a>
+    <a href="/the-operative-group-site/styles/estate/">Estate</a><a href="/the-operative-group-site/styles/boutique/">Boutique</a><a href="/the-operative-group-site/styles/broadcast/">Broadcast</a><a href="/the-operative-group-site/styles/cinematic/" aria-current="page">Cinematic</a><a href="/the-operative-group-site/styles/gallery/">Gallery</a><a href="/the-operative-group-site/styles/grid/">Grid</a>
     <a href="/the-operative-group-site/" class="switcher__live">Current</a>
   </nav>
 <section class="hero">
@@ -115,6 +168,10 @@ body{background:var(--paper);color:var(--ink)}
     <figure style="margin:0">
   <div class="hero__photo">
    <picture>
+    <source type="image/webp" media="(max-width:760px)" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero-m.webp">
+    <source type="image/jpeg" media="(max-width:760px)" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero-m.jpg">
+    <source type="image/webp" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero.webp">
+    <source type="image/jpeg" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-hero.jpg">
     <source type="image/webp" sizes="(max-width:900px) 100vw, 1100px" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-700.webp 700w, /the-operative-group-site/assets/places/eugene-spencer-butte.webp 1200w">
     <source type="image/jpeg" sizes="(max-width:900px) 100vw, 1100px" srcset="/the-operative-group-site/assets/places/eugene-spencer-butte-700.jpg 700w, /the-operative-group-site/assets/places/eugene-spencer-butte.jpg 1200w">
     <img src="/the-operative-group-site/assets/places/eugene-spencer-butte.jpg" alt="Eugene, Oregon with Spencer Butte rising to the south" width="1200" height="675" loading="eager" fetchpriority="high">
