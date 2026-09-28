@@ -606,6 +606,26 @@ a.agent:hover .agent__n{color:var(--green-ink)}
 .skip:focus{left:8px;top:8px}
 :focus-visible{outline:2px solid var(--green-ink);outline-offset:2px}
 ::selection{background:var(--green);color:#132009}
+
+/* ---- answer-first block + fact tables ----------------------------------
+   The passage an assistant should quote, and the tables it should read. */
+.answer{border:1px solid var(--line);border-left:4px solid var(--green);border-radius:var(--r);
+  background:var(--card);padding:clamp(20px,2.6vw,30px);box-shadow:var(--shadow);max-width:74ch}
+.answer__k{font-family:var(--label);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--green-ink);display:block;margin-bottom:10px}
+.answer__a{margin:0;font-size:clamp(1.05rem,1.5vw,1.22rem);line-height:1.6;color:var(--ink);font-weight:500}
+.answer__src{margin:14px 0 0;font-size:13px;color:var(--ink-2)}
+.answer__src a{color:var(--green-ink);text-decoration:underline;text-underline-offset:3px}
+.answer__d{margin:6px 0 0;font-size:12px;color:var(--ink-3)}
+.facts{width:100%;border-collapse:collapse;margin:22px 0;font-size:15px;
+  border:1px solid var(--line-2);border-radius:var(--r);overflow:hidden;background:var(--card)}
+.facts caption{caption-side:top;text-align:left;font-family:var(--label);font-size:11px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--green-ink);padding:0 0 10px}
+.facts th,.facts td{padding:12px 16px;border-bottom:1px solid var(--line-2);vertical-align:top}
+.facts tr:last-child th,.facts tr:last-child td{border-bottom:0}
+.facts th{text-align:left;font-weight:600;color:var(--ink-2);width:40%;font-size:14px}
+.facts td{color:var(--ink)}
+@media (max-width:560px){.facts th,.facts td{padding:10px 12px;font-size:14px}.facts th{width:46%}}
 /* ---- the style picker ---------------------------------------------------
    One row per option: a real screenshot of the real homepage, then the name
    and what it is. The image is the argument, so it gets the space. */

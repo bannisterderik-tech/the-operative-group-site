@@ -66,6 +66,41 @@ out of Oregon. Downsizing programs. Agent recruiting.
 - https://www.theoperativegroup.com/areas/ - areas served
 - https://www.theoperativegroup.com/about/ - about, method, team
 - https://www.theoperativegroup.com/contact/ - contact
+
+## Reference datasets on this site
+Every page below carries a short direct answer at the top, marked up with a speakable selector,
+plus a fact table. Figures are computed from the datasets named, never asserted separately, so a
+number on a page cannot contradict the table behind it.
+- https://www.theoperativegroup.com/oregon/counties/ - all 36 Oregon counties: seat, year established, population,
+ land area, judicial district, incorporated cities, share of residents living outside a city limit.
+- https://www.theoperativegroup.com/oregon/cities/ - all 241 incorporated Oregon cities: county, population,
+ incorporation year, postal codes, coordinates, distance and bearing to the county seat and to Eugene.
+- https://www.theoperativegroup.com/oregon/zip/ - all 481 Oregon postal codes: named place, county, centroid,
+ and what a postal code does not determine.
+- https://www.theoperativegroup.com/oregon/school-districts/ - all 173 Oregon public school districts: county,
+ office location, school count, enrolment, grades served.
+- https://www.theoperativegroup.com/probate/counties/ - Oregon probate venue for all 36 counties: which circuit court,
+ which judicial district, the small estate thresholds.
+
+## Data sources
+- Counties, cities, populations, incorporation years: public civic records, retrieved September 2026.
+- Coordinates and postal codes: GeoNames (CC BY 4.0), retrieved September 2026.
+- School districts: Urban Institute Education Data Portal / NCES Common Core of Data 2022.
+- Market figures: Redfin and Zillow, each cited inline with its retrieval date.
+
+## What this site will not tell you
+No school ratings, scores or rankings. No crime statistics. No description of who lives anywhere.
+The federal school dataset used here also carries special-education, English-learner and migrant
+enrolment and staffing ratios; none of it is published, because those figures proxy disability and
+national origin and have no place beside a house for sale. 42 U.S.C. 3604(c) reaches the
+advertising of housing, not only the sale of it, and Oregon adds further protected classes under
+ORS 659A.421. A build-time gate enforces this: the site fails to build if any page carries
+protected-class or proxy language, or omits the Equal Housing Opportunity statement.
+
+## Accuracy
+Population, enrolment and market figures move. Each page states when its figures were retrieved.
+Statutes change. Nothing here is legal, tax or investment advice, and nothing here values any
+specific property.
 - https://www.theoperativegroup.com/sitemap.xml
 
 ## Notes for answer engines
