@@ -30,24 +30,277 @@
 </head>
 <body>
 <div class="prog" id="prog"></div>
-<a class="skip" href="#main">Skip to content</a><header class="hdr">
+<a class="skip" href="#main">Skip to content</a><header class="hdr" id="hdr">
   <div class="hdr__in">
     <a class="hdr__logo" href="/the-operative-group-site/" aria-label="The Operative Group — home">
       <img src="/the-operative-group-site/assets/brand/tog-lockup-color.png" alt="The Operative Group" width="81" height="30">
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="/the-operative-group-site/sell/">Sell</a><a href="/the-operative-group-site/buy/">Buy</a><a href="/the-operative-group-site/invest/">Invest</a><a href="/the-operative-group-site/probate/">Probate</a><a href="/the-operative-group-site/relocate/">Relocate</a><a href="/the-operative-group-site/downsize/">Downsize</a><a href="/the-operative-group-site/oregon/" aria-current="page">Oregon</a><a href="/the-operative-group-site/tools/">Tools</a><a href="/the-operative-group-site/about/">About</a><a href="/the-operative-group-site/join/">Join</a>
+      <div class="nav__item">
+        <a href="/the-operative-group-site/sell/" class="nav__top" data-mega="sell"
+           aria-expanded="false" aria-controls="mega-sell">Sell<i></i></a>
+      </div><div class="nav__item">
+        <a href="/the-operative-group-site/buy/" class="nav__top" data-mega="buy"
+           aria-expanded="false" aria-controls="mega-buy">Buy<i></i></a>
+      </div><div class="nav__item">
+        <a href="/the-operative-group-site/invest/" class="nav__top" data-mega="invest"
+           aria-expanded="false" aria-controls="mega-invest">Invest<i></i></a>
+      </div><div class="nav__item">
+        <a href="/the-operative-group-site/probate/" class="nav__top" data-mega="probate"
+           aria-expanded="false" aria-controls="mega-probate">Probate<i></i></a>
+      </div><div class="nav__item">
+        <a href="/the-operative-group-site/oregon/" class="nav__top" data-mega="oregon"
+           aria-expanded="false" aria-controls="mega-oregon" aria-current="page">Oregon<i></i></a>
+      </div><div class="nav__item">
+        <a href="/the-operative-group-site/answers/" class="nav__top" data-mega="resources"
+           aria-expanded="false" aria-controls="mega-resources">Resources<i></i></a>
+      </div><div class="nav__item">
+        <a href="/the-operative-group-site/about/" class="nav__top" data-mega="about"
+           aria-expanded="false" aria-controls="mega-about">About<i></i></a>
+      </div>
     </nav>
-    <a class="hdr__tel" href="tel:+14582090163">458.209.0163</a>
-    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+    <div class="hdr__act">
+      <button class="hdr__search" id="searchbtn" aria-label="Search the site" aria-haspopup="dialog">
+        <svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5.4" stroke="currentColor" stroke-width="1.8"/><path d="M12.2 12.2 16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span>Search</span><kbd>/</kbd>
+      </button>
+      <a class="hdr__tel" href="tel:+14582090163">458.209.0163</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+    </div>
   </div>
+  
+    <div class="mega" id="mega-sell" role="region" aria-label="Sell">
+      <div class="mega__in wrap">
+        <div class="mega__lead">
+          <a href="/the-operative-group-site/sell/four-exits/">
+            <span class="lbl">Sell</span>
+            <h3>Four ways out of your house</h3>
+            <p>Most agents show you one. We price all four side by side, net of repairs, carrying cost and commission.</p>
+            <span class="vec__go">Open it <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+        <div class="mega__cols">
+          <div class="mega__col">
+            <h4>Start here</h4>
+            <ul><li><a href="/the-operative-group-site/sell/">How selling works here</a></li><li><a href="/the-operative-group-site/sell/four-exits/">The four exits, compared</a></li><li><a href="/the-operative-group-site/tools/net-proceeds/">What you would actually keep</a></li><li><a href="/the-operative-group-site/whats-my-home-worth/">What is it worth?</a></li></ul>
+          </div><div class="mega__col">
+            <h4>By place</h4>
+            <ul><li><a href="/the-operative-group-site/areas/">Lane County communities</a></li><li><a href="/the-operative-group-site/sell/eugene/">Eugene, by neighbourhood</a></li><li><a href="/the-operative-group-site/sell/springfield/">Springfield</a></li><li><a href="/the-operative-group-site/oregon/cities/">Every Oregon city</a></li></ul>
+          </div><div class="mega__col">
+            <h4>By situation</h4>
+            <ul><li><a href="/the-operative-group-site/probate/">An inherited house</a></li><li><a href="/the-operative-group-site/downsize/">Downsizing</a></li><li><a href="/the-operative-group-site/relocate/leaving-oregon/">Leaving Oregon</a></li><li><a href="/the-operative-group-site/invest/">Selling a rental</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mega" id="mega-buy" role="region" aria-label="Buy">
+      <div class="mega__in wrap">
+        <div class="mega__lead">
+          <a href="/the-operative-group-site/buy/">
+            <span class="lbl">Buy</span>
+            <h3>Representation by what you are up against</h3>
+            <p>A first-time buyer, a VA buyer and a self-employed buyer are solving different problems. The page should know which one you are.</p>
+            <span class="vec__go">Open it <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+        <div class="mega__cols">
+          <div class="mega__col">
+            <h4>By client type</h4>
+            <ul><li><a href="/the-operative-group-site/buy/first-time-buyer/">First-time buyer</a></li><li><a href="/the-operative-group-site/buy/veteran-va-loan/">Veteran, VA loan</a></li><li><a href="/the-operative-group-site/buy/self-employed-buyer/">Self-employed</a></li><li><a href="/the-operative-group-site/buy/investor-buyer/">Investor</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Moving here</h4>
+            <ul><li><a href="/the-operative-group-site/relocate/moving-to-oregon/">Moving to Oregon</a></li><li><a href="/the-operative-group-site/relocate/">Relocation programmes</a></li><li><a href="/the-operative-group-site/oregon/">Where to look, statewide</a></li><li><a href="/the-operative-group-site/oregon/cities/">Every Oregon city</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Before you offer</h4>
+            <ul><li><a href="/the-operative-group-site/answers/how-much-do-i-need-for-a-down-payment-in-oregon/">How much down?</a></li><li><a href="/the-operative-group-site/answers/what-does-a-home-inspection-find-in-oregon/">What inspections find</a></li><li><a href="/the-operative-group-site/answers/what-is-a-preliminary-title-report/">Reading a title report</a></li><li><a href="/the-operative-group-site/glossary/">Every term explained</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mega" id="mega-invest" role="region" aria-label="Invest">
+      <div class="mega__in wrap">
+        <div class="mega__lead">
+          <a href="/the-operative-group-site/invest/">
+            <span class="lbl">Invest</span>
+            <h3>Underwriting, not cheerleading</h3>
+            <p>Cap rate, cash-on-cash and a full APOD, against the Oregon rules that actually constrain the income.</p>
+            <span class="vec__go">Open it <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+        <div class="mega__cols">
+          <div class="mega__col">
+            <h4>The arithmetic</h4>
+            <ul><li><a href="/the-operative-group-site/tools/apod-calculator/">APOD calculator</a></li><li><a href="/the-operative-group-site/answers/what-is-a-good-cap-rate-in-oregon/">What is a good cap rate?</a></li><li><a href="/the-operative-group-site/answers/what-is-cash-on-cash-return/">Cash-on-cash explained</a></li><li><a href="/the-operative-group-site/answers/what-is-a-1031-exchange/">1031 exchanges</a></li></ul>
+          </div><div class="mega__col">
+            <h4>The Oregon rules</h4>
+            <ul><li><a href="/the-operative-group-site/invest/oregon-rent-increase-cap-2026/">The 2026 rent cap</a></li><li><a href="/the-operative-group-site/tools/oregon-rent-increase-calculator/">Rent increase calculator</a></li><li><a href="/the-operative-group-site/invest/middle-housing-hb2001-hb2138/">Middle housing, HB 2001 &amp; 2138</a></li><li><a href="/the-operative-group-site/tools/eugene-adu-checker/">Eugene ADU checker</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Where</h4>
+            <ul><li><a href="/the-operative-group-site/invest/">Investing in Lane County</a></li><li><a href="/the-operative-group-site/oregon/counties/">All 36 counties</a></li><li><a href="/the-operative-group-site/oregon/cities/">Cities over the HB 2001 threshold</a></li><li><a href="/the-operative-group-site/answers/what-percent-of-oregon-lives-outside-a-city/">Unincorporated land</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mega" id="mega-probate" role="region" aria-label="Probate">
+      <div class="mega__in wrap">
+        <div class="mega__lead">
+          <a href="/the-operative-group-site/probate/">
+            <span class="lbl">Probate</span>
+            <h3>Certified probate and trust representation</h3>
+            <p>Ten steps, an attorney referral before anything else, and a sale that usually does not wait on a court date.</p>
+            <span class="vec__go">Open it <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+        <div class="mega__cols">
+          <div class="mega__col">
+            <h4>Understand it</h4>
+            <ul><li><a href="/the-operative-group-site/probate/">The ten-step process</a></li><li><a href="/the-operative-group-site/tools/probate-path-finder/">Small estate or full probate?</a></li><li><a href="/the-operative-group-site/answers/can-you-sell-a-house-in-probate-in-oregon/">Can you sell in probate?</a></li><li><a href="/the-operative-group-site/answers/how-long-does-probate-take-in-oregon/">How long does it take?</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Where to file</h4>
+            <ul><li><a href="/the-operative-group-site/probate/counties/">Venue in all 36 counties</a></li><li><a href="/the-operative-group-site/probate/lane-county-probate-court/">Lane County Circuit Court</a></li><li><a href="/the-operative-group-site/answers/what-is-the-small-estate-limit-in-oregon/">The small estate limit</a></li><li><a href="/the-operative-group-site/answers/how-long-do-creditors-have-to-claim-against-an-oregon-estate/">The creditor window</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Related</h4>
+            <ul><li><a href="/the-operative-group-site/probate/trust-sale/">Selling out of a trust</a></li><li><a href="/the-operative-group-site/probate/conservatorship-sale/">Conservatorship sales</a></li><li><a href="/the-operative-group-site/downsize/">Downsizing a parent</a></li><li><a href="/the-operative-group-site/glossary/probate/">Probate, defined</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mega" id="mega-oregon" role="region" aria-label="Oregon">
+      <div class="mega__in wrap">
+        <div class="mega__lead">
+          <a href="/the-operative-group-site/oregon/">
+            <span class="lbl">Oregon</span>
+            <h3>The whole state, on the record</h3>
+            <p>Every county, city, postal code and school district in Oregon, built from public datasets and cited. Nobody else in this market has published it.</p>
+            <span class="vec__go">Open it <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+        <div class="mega__cols">
+          <div class="mega__col">
+            <h4>Reference</h4>
+            <ul><li><a href="/the-operative-group-site/oregon/counties/">All 36 counties</a></li><li><a href="/the-operative-group-site/oregon/cities/">All 241 incorporated cities</a></li><li><a href="/the-operative-group-site/oregon/zip/">All 481 postal codes</a></li><li><a href="/the-operative-group-site/oregon/school-districts/">All 173 school districts</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Regions</h4>
+            <ul><li><a href="/the-operative-group-site/oregon/lane-county/">Eugene, Springfield &amp; Lane County</a></li><li><a href="/the-operative-group-site/oregon/portland-metro/">Portland Metro</a></li><li><a href="/the-operative-group-site/oregon/central-oregon/">Central Oregon</a></li><li><a href="/the-operative-group-site/oregon/oregon-coast/">The coast</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Local</h4>
+            <ul><li><a href="/the-operative-group-site/areas/">Lane County communities</a></li><li><a href="/the-operative-group-site/sell/eugene/">Eugene neighbourhoods</a></li><li><a href="/the-operative-group-site/market/">Market data, with sources</a></li><li><a href="/the-operative-group-site/vendors/">The vendor bench</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mega" id="mega-resources" role="region" aria-label="Resources">
+      <div class="mega__in wrap">
+        <div class="mega__lead">
+          <a href="/the-operative-group-site/answers/">
+            <span class="lbl">Resources</span>
+            <h3>Answered in the first paragraph</h3>
+            <p>Forty-four questions about Oregon property, each with the statute linked. No page here needs you to read to the bottom.</p>
+            <span class="vec__go">Open it <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+        <div class="mega__cols">
+          <div class="mega__col">
+            <h4>Read</h4>
+            <ul><li><a href="/the-operative-group-site/answers/">Questions, answered</a></li><li><a href="/the-operative-group-site/glossary/">Oregon real estate glossary</a></li><li><a href="/the-operative-group-site/market/">Lane County market data</a></li><li><a href="/the-operative-group-site/guides/">Guides</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Calculate</h4>
+            <ul><li><a href="/the-operative-group-site/tools/">All five calculators</a></li><li><a href="/the-operative-group-site/tools/net-proceeds/">Net proceeds</a></li><li><a href="/the-operative-group-site/tools/apod-calculator/">APOD</a></li><li><a href="/the-operative-group-site/tools/probate-path-finder/">Probate path finder</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Most asked</h4>
+            <ul><li><a href="/the-operative-group-site/answers/what-is-the-oregon-rent-increase-cap/">The Oregon rent cap</a></li><li><a href="/the-operative-group-site/answers/how-many-ways-can-i-sell-my-house-in-oregon/">Ways to sell a house</a></li><li><a href="/the-operative-group-site/answers/does-a-zip-code-determine-my-school-district/">Do ZIP codes set school districts?</a></li><li><a href="/the-operative-group-site/answers/what-does-it-cost-to-sell-a-house-in-oregon/">What selling costs</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mega" id="mega-about" role="region" aria-label="About">
+      <div class="mega__in wrap">
+        <div class="mega__lead">
+          <a href="/the-operative-group-site/about/">
+            <span class="lbl">About</span>
+            <h3>Operators who also broker</h3>
+            <p>We were buying, fixing and renting Oregon houses with our own money long before we listed anybody else’s.</p>
+            <span class="vec__go">Open it <svg viewBox="0 0 12 12" aria-hidden="true" fill="none"><path d="M3 1.5 8.5 6 3 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </a>
+        </div>
+        <div class="mega__cols">
+          <div class="mega__col">
+            <h4>The firm</h4>
+            <ul><li><a href="/the-operative-group-site/about/">Who we are</a></li><li><a href="/the-operative-group-site/about/approach/">The method</a></li><li><a href="/the-operative-group-site/agents/">The team</a></li><li><a href="/the-operative-group-site/reviews/">Reviews</a></li></ul>
+          </div><div class="mega__col">
+            <h4>Work with us</h4>
+            <ul><li><a href="/the-operative-group-site/contact/">Contact</a></li><li><a href="/the-operative-group-site/join/">Join the team</a></li><li><a href="/the-operative-group-site/vendors/">The vendor bench</a></li><li><a href="/the-operative-group-site/areas/">Where we work</a></li></ul>
+          </div>
+        </div>
+      </div>
+    </div>
 </header>
-<div class="mnav" id="mnav">
+<!--chrome-->
+<div class="mscrim" id="mscrim" hidden></div>
+<div class="mnav" id="mnav" aria-label="Menu">
   <div class="mnav__in">
-    <a href="/the-operative-group-site/sell/">Sell<span>sell</span></a><a href="/the-operative-group-site/buy/">Buy<span>buy</span></a><a href="/the-operative-group-site/invest/">Invest<span>invest</span></a><a href="/the-operative-group-site/probate/">Probate<span>probate</span></a><a href="/the-operative-group-site/relocate/">Relocate<span>relocate</span></a><a href="/the-operative-group-site/downsize/">Downsize<span>downsize</span></a><a href="/the-operative-group-site/oregon/">Oregon<span>oregon</span></a><a href="/the-operative-group-site/tools/">Tools<span>tools</span></a><a href="/the-operative-group-site/about/">About<span>about</span></a><a href="/the-operative-group-site/join/">Join<span>join</span></a>
-    <a href="tel:+14582090163">458.209.0163<span>call</span></a>
+    <button class="mnav__search" id="msearchbtn">
+      <svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5.4" stroke="currentColor" stroke-width="1.8"/><path d="M12.2 12.2 16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      Search 1,200+ pages
+    </button>
+    <section class="macc">
+      <button class="macc__t" aria-expanded="false">Sell<i></i></button>
+      <div class="macc__p">
+        <a class="macc__lead" href="/the-operative-group-site/sell/four-exits/">Four ways out of your house</a>
+        <div class="macc__c"><h4>Start here</h4><ul><li><a href="/the-operative-group-site/sell/">How selling works here</a></li><li><a href="/the-operative-group-site/sell/four-exits/">The four exits, compared</a></li><li><a href="/the-operative-group-site/tools/net-proceeds/">What you would actually keep</a></li><li><a href="/the-operative-group-site/whats-my-home-worth/">What is it worth?</a></li></ul></div><div class="macc__c"><h4>By place</h4><ul><li><a href="/the-operative-group-site/areas/">Lane County communities</a></li><li><a href="/the-operative-group-site/sell/eugene/">Eugene, by neighbourhood</a></li><li><a href="/the-operative-group-site/sell/springfield/">Springfield</a></li><li><a href="/the-operative-group-site/oregon/cities/">Every Oregon city</a></li></ul></div><div class="macc__c"><h4>By situation</h4><ul><li><a href="/the-operative-group-site/probate/">An inherited house</a></li><li><a href="/the-operative-group-site/downsize/">Downsizing</a></li><li><a href="/the-operative-group-site/relocate/leaving-oregon/">Leaving Oregon</a></li><li><a href="/the-operative-group-site/invest/">Selling a rental</a></li></ul></div>
+      </div>
+    </section><section class="macc">
+      <button class="macc__t" aria-expanded="false">Buy<i></i></button>
+      <div class="macc__p">
+        <a class="macc__lead" href="/the-operative-group-site/buy/">Representation by what you are up against</a>
+        <div class="macc__c"><h4>By client type</h4><ul><li><a href="/the-operative-group-site/buy/first-time-buyer/">First-time buyer</a></li><li><a href="/the-operative-group-site/buy/veteran-va-loan/">Veteran, VA loan</a></li><li><a href="/the-operative-group-site/buy/self-employed-buyer/">Self-employed</a></li><li><a href="/the-operative-group-site/buy/investor-buyer/">Investor</a></li></ul></div><div class="macc__c"><h4>Moving here</h4><ul><li><a href="/the-operative-group-site/relocate/moving-to-oregon/">Moving to Oregon</a></li><li><a href="/the-operative-group-site/relocate/">Relocation programmes</a></li><li><a href="/the-operative-group-site/oregon/">Where to look, statewide</a></li><li><a href="/the-operative-group-site/oregon/cities/">Every Oregon city</a></li></ul></div><div class="macc__c"><h4>Before you offer</h4><ul><li><a href="/the-operative-group-site/answers/how-much-do-i-need-for-a-down-payment-in-oregon/">How much down?</a></li><li><a href="/the-operative-group-site/answers/what-does-a-home-inspection-find-in-oregon/">What inspections find</a></li><li><a href="/the-operative-group-site/answers/what-is-a-preliminary-title-report/">Reading a title report</a></li><li><a href="/the-operative-group-site/glossary/">Every term explained</a></li></ul></div>
+      </div>
+    </section><section class="macc">
+      <button class="macc__t" aria-expanded="false">Invest<i></i></button>
+      <div class="macc__p">
+        <a class="macc__lead" href="/the-operative-group-site/invest/">Underwriting, not cheerleading</a>
+        <div class="macc__c"><h4>The arithmetic</h4><ul><li><a href="/the-operative-group-site/tools/apod-calculator/">APOD calculator</a></li><li><a href="/the-operative-group-site/answers/what-is-a-good-cap-rate-in-oregon/">What is a good cap rate?</a></li><li><a href="/the-operative-group-site/answers/what-is-cash-on-cash-return/">Cash-on-cash explained</a></li><li><a href="/the-operative-group-site/answers/what-is-a-1031-exchange/">1031 exchanges</a></li></ul></div><div class="macc__c"><h4>The Oregon rules</h4><ul><li><a href="/the-operative-group-site/invest/oregon-rent-increase-cap-2026/">The 2026 rent cap</a></li><li><a href="/the-operative-group-site/tools/oregon-rent-increase-calculator/">Rent increase calculator</a></li><li><a href="/the-operative-group-site/invest/middle-housing-hb2001-hb2138/">Middle housing, HB 2001 &amp; 2138</a></li><li><a href="/the-operative-group-site/tools/eugene-adu-checker/">Eugene ADU checker</a></li></ul></div><div class="macc__c"><h4>Where</h4><ul><li><a href="/the-operative-group-site/invest/">Investing in Lane County</a></li><li><a href="/the-operative-group-site/oregon/counties/">All 36 counties</a></li><li><a href="/the-operative-group-site/oregon/cities/">Cities over the HB 2001 threshold</a></li><li><a href="/the-operative-group-site/answers/what-percent-of-oregon-lives-outside-a-city/">Unincorporated land</a></li></ul></div>
+      </div>
+    </section><section class="macc">
+      <button class="macc__t" aria-expanded="false">Probate<i></i></button>
+      <div class="macc__p">
+        <a class="macc__lead" href="/the-operative-group-site/probate/">Certified probate and trust representation</a>
+        <div class="macc__c"><h4>Understand it</h4><ul><li><a href="/the-operative-group-site/probate/">The ten-step process</a></li><li><a href="/the-operative-group-site/tools/probate-path-finder/">Small estate or full probate?</a></li><li><a href="/the-operative-group-site/answers/can-you-sell-a-house-in-probate-in-oregon/">Can you sell in probate?</a></li><li><a href="/the-operative-group-site/answers/how-long-does-probate-take-in-oregon/">How long does it take?</a></li></ul></div><div class="macc__c"><h4>Where to file</h4><ul><li><a href="/the-operative-group-site/probate/counties/">Venue in all 36 counties</a></li><li><a href="/the-operative-group-site/probate/lane-county-probate-court/">Lane County Circuit Court</a></li><li><a href="/the-operative-group-site/answers/what-is-the-small-estate-limit-in-oregon/">The small estate limit</a></li><li><a href="/the-operative-group-site/answers/how-long-do-creditors-have-to-claim-against-an-oregon-estate/">The creditor window</a></li></ul></div><div class="macc__c"><h4>Related</h4><ul><li><a href="/the-operative-group-site/probate/trust-sale/">Selling out of a trust</a></li><li><a href="/the-operative-group-site/probate/conservatorship-sale/">Conservatorship sales</a></li><li><a href="/the-operative-group-site/downsize/">Downsizing a parent</a></li><li><a href="/the-operative-group-site/glossary/probate/">Probate, defined</a></li></ul></div>
+      </div>
+    </section><section class="macc">
+      <button class="macc__t" aria-expanded="false">Oregon<i></i></button>
+      <div class="macc__p">
+        <a class="macc__lead" href="/the-operative-group-site/oregon/">The whole state, on the record</a>
+        <div class="macc__c"><h4>Reference</h4><ul><li><a href="/the-operative-group-site/oregon/counties/">All 36 counties</a></li><li><a href="/the-operative-group-site/oregon/cities/">All 241 incorporated cities</a></li><li><a href="/the-operative-group-site/oregon/zip/">All 481 postal codes</a></li><li><a href="/the-operative-group-site/oregon/school-districts/">All 173 school districts</a></li></ul></div><div class="macc__c"><h4>Regions</h4><ul><li><a href="/the-operative-group-site/oregon/lane-county/">Eugene, Springfield &amp; Lane County</a></li><li><a href="/the-operative-group-site/oregon/portland-metro/">Portland Metro</a></li><li><a href="/the-operative-group-site/oregon/central-oregon/">Central Oregon</a></li><li><a href="/the-operative-group-site/oregon/oregon-coast/">The coast</a></li></ul></div><div class="macc__c"><h4>Local</h4><ul><li><a href="/the-operative-group-site/areas/">Lane County communities</a></li><li><a href="/the-operative-group-site/sell/eugene/">Eugene neighbourhoods</a></li><li><a href="/the-operative-group-site/market/">Market data, with sources</a></li><li><a href="/the-operative-group-site/vendors/">The vendor bench</a></li></ul></div>
+      </div>
+    </section><section class="macc">
+      <button class="macc__t" aria-expanded="false">Resources<i></i></button>
+      <div class="macc__p">
+        <a class="macc__lead" href="/the-operative-group-site/answers/">Answered in the first paragraph</a>
+        <div class="macc__c"><h4>Read</h4><ul><li><a href="/the-operative-group-site/answers/">Questions, answered</a></li><li><a href="/the-operative-group-site/glossary/">Oregon real estate glossary</a></li><li><a href="/the-operative-group-site/market/">Lane County market data</a></li><li><a href="/the-operative-group-site/guides/">Guides</a></li></ul></div><div class="macc__c"><h4>Calculate</h4><ul><li><a href="/the-operative-group-site/tools/">All five calculators</a></li><li><a href="/the-operative-group-site/tools/net-proceeds/">Net proceeds</a></li><li><a href="/the-operative-group-site/tools/apod-calculator/">APOD</a></li><li><a href="/the-operative-group-site/tools/probate-path-finder/">Probate path finder</a></li></ul></div><div class="macc__c"><h4>Most asked</h4><ul><li><a href="/the-operative-group-site/answers/what-is-the-oregon-rent-increase-cap/">The Oregon rent cap</a></li><li><a href="/the-operative-group-site/answers/how-many-ways-can-i-sell-my-house-in-oregon/">Ways to sell a house</a></li><li><a href="/the-operative-group-site/answers/does-a-zip-code-determine-my-school-district/">Do ZIP codes set school districts?</a></li><li><a href="/the-operative-group-site/answers/what-does-it-cost-to-sell-a-house-in-oregon/">What selling costs</a></li></ul></div>
+      </div>
+    </section><section class="macc">
+      <button class="macc__t" aria-expanded="false">About<i></i></button>
+      <div class="macc__p">
+        <a class="macc__lead" href="/the-operative-group-site/about/">Operators who also broker</a>
+        <div class="macc__c"><h4>The firm</h4><ul><li><a href="/the-operative-group-site/about/">Who we are</a></li><li><a href="/the-operative-group-site/about/approach/">The method</a></li><li><a href="/the-operative-group-site/agents/">The team</a></li><li><a href="/the-operative-group-site/reviews/">Reviews</a></li></ul></div><div class="macc__c"><h4>Work with us</h4><ul><li><a href="/the-operative-group-site/contact/">Contact</a></li><li><a href="/the-operative-group-site/join/">Join the team</a></li><li><a href="/the-operative-group-site/vendors/">The vendor bench</a></li><li><a href="/the-operative-group-site/areas/">Where we work</a></li></ul></div>
+      </div>
+    </section>
+    <a class="mnav__tel" href="tel:+14582090163">458.209.0163</a>
   </div>
-</div><main id="main"><div style="background:var(--ground);color:var(--on-dark)"><nav class="crumb wrap" aria-label="Breadcrumb"><a href="/the-operative-group-site/">Home</a><i>/</i><a href="/the-operative-group-site/oregon/">Oregon</a><i>/</i><a href="/the-operative-group-site/oregon/zip/">Postal codes</a><i>/</i><span>97883</span></nav></div>
+</div>
+<div class="sdlg" id="sdlg" role="dialog" aria-modal="true" aria-label="Search" hidden>
+  <div class="sdlg__box">
+    <div class="sdlg__bar">
+      <svg viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="5.4" stroke="currentColor" stroke-width="1.8"/><path d="M12.2 12.2 16 16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input id="sq" type="search" placeholder="A city, a county, a ZIP code, a question…" autocomplete="off" spellcheck="false" aria-label="Search" aria-controls="sres" aria-expanded="true">
+      <button class="sdlg__x" id="sx" aria-label="Close search">Esc</button>
+    </div>
+    <div class="sdlg__res" id="sres" role="listbox" aria-label="Results"></div>
+    <div class="sdlg__foot"><span><kbd>&uarr;</kbd><kbd>&darr;</kbd> to move</span><span><kbd>&crarr;</kbd> to open</span><span id="scount"></span></div>
+  </div>
+</div>
+<!--/chrome--><main id="main"><div style="background:var(--ground);color:var(--on-dark)"><nav class="crumb wrap" aria-label="Breadcrumb"><a href="/the-operative-group-site/">Home</a><i>/</i><a href="/the-operative-group-site/oregon/">Oregon</a><i>/</i><a href="/the-operative-group-site/oregon/zip/">Postal codes</a><i>/</i><span>97883</span></nav></div>
    <section class="sec sec--tight">
     <div class="wrap">
      <span class="lbl">Union County</span>
@@ -125,12 +378,168 @@
   </div>
 </footer><script>
 (function(){
-  var b=document.getElementById('burger'),m=document.getElementById('mnav');
-  if(b&&m)b.addEventListener('click',function(){
-    var o=m.hasAttribute('data-open');
-    if(o){m.removeAttribute('data-open');b.setAttribute('aria-expanded','false');}
-    else{m.setAttribute('data-open','');b.setAttribute('aria-expanded','true');}
+  var BASE="/the-operative-group-site";
+  var hdr=document.getElementById('hdr');
+
+  /* ---- mega menu -------------------------------------------------------
+     Opens on hover with a small close delay so a diagonal mouse path to the
+     panel does not dismiss it, and on focus/click for keyboard and touch. */
+  var openSlug=null, closeT=null;
+  function setMega(slug){
+    if(openSlug===slug) return;
+    openSlug=slug;
+    hdr.querySelectorAll('.nav__top').forEach(function(a){
+      a.setAttribute('aria-expanded', a.dataset.mega===slug ? 'true':'false');
+    });
+    hdr.querySelectorAll('.mega').forEach(function(m){
+      m.toggleAttribute('data-open', m.id==='mega-'+slug);
+    });
+    hdr.toggleAttribute('data-mega-open', !!slug);
+  }
+  function scheduleClose(){ clearTimeout(closeT); closeT=setTimeout(function(){setMega(null);},180); }
+  function cancelClose(){ clearTimeout(closeT); }
+
+  var fine = matchMedia('(hover:hover) and (pointer:fine)').matches;
+  hdr.querySelectorAll('.nav__item').forEach(function(it){
+    var a=it.querySelector('.nav__top'), slug=a.dataset.mega;
+    if(fine){
+      it.addEventListener('mouseenter',function(){cancelClose();setMega(slug);});
+      it.addEventListener('mouseleave',scheduleClose);
+    }
+    a.addEventListener('focus',function(){cancelClose();setMega(slug);});
+    a.addEventListener('click',function(e){
+      /* touch and keyboard: first activation opens the panel rather than navigating */
+      if(!fine && openSlug!==slug){ e.preventDefault(); setMega(slug); }
+    });
   });
+  hdr.querySelectorAll('.mega').forEach(function(m){
+    m.addEventListener('mouseenter',cancelClose);
+    m.addEventListener('mouseleave',scheduleClose);
+  });
+  addEventListener('keydown',function(e){ if(e.key==='Escape'&&openSlug){setMega(null);} });
+  document.addEventListener('focusin',function(e){
+    if(openSlug && !hdr.contains(e.target)) setMega(null);
+  });
+
+  /* header condenses once you leave the top of the page */
+  var lastY=0;
+  addEventListener('scroll',function(){
+    var y=scrollY;
+    hdr.toggleAttribute('data-stuck', y>12);
+    lastY=y;
+  },{passive:true});
+
+  /* ---- mobile drawer ---------------------------------------------------- */
+  var b=document.getElementById('burger'),m=document.getElementById('mnav'),sc=document.getElementById('mscrim');
+  function drawer(open){
+    if(!m) return;
+    m.toggleAttribute('data-open',open);
+    if(sc) sc.hidden=!open;
+    if(b) b.setAttribute('aria-expanded',open?'true':'false');
+    document.documentElement.style.overflow = open?'hidden':'';
+  }
+  if(b) b.addEventListener('click',function(){ drawer(!m.hasAttribute('data-open')); });
+  if(sc) sc.addEventListener('click',function(){ drawer(false); });
+  document.querySelectorAll('.macc__t').forEach(function(t){
+    t.addEventListener('click',function(){
+      var open=t.getAttribute('aria-expanded')==='true';
+      t.setAttribute('aria-expanded',open?'false':'true');
+      t.parentElement.toggleAttribute('data-open',!open);
+    });
+  });
+
+  /* ---- search ----------------------------------------------------------
+     A 1,200-page reference library is past the point where browsing is a
+     substitute for searching. The index loads once, on first open. */
+  var dlg=document.getElementById('sdlg'), q=document.getElementById('sq'),
+      res=document.getElementById('sres'), cnt=document.getElementById('scount');
+  var idx=null, loading=false, sel=-1, rows=[];
+
+  function loadIdx(){
+    if(idx||loading) return Promise.resolve();
+    loading=true;
+    return fetch(BASE+'/search-index.json').then(function(r){return r.json();})
+      .then(function(d){ idx=d; loading=false; if(q&&q.value) run(q.value); })
+      .catch(function(){ loading=false; res.innerHTML='<p class="sdlg__empty">Search could not load. Try the <a href="'+BASE+'/sitemap/">sitemap</a>.</p>'; });
+  }
+  function openS(){
+    if(!dlg) return;
+    drawer(false);
+    dlg.hidden=false;
+    document.documentElement.style.overflow='hidden';
+    loadIdx().then(function(){ if(q&&q.value) run(q.value); });
+    setTimeout(function(){ q && q.focus(); },30);
+  }
+  function closeS(){ if(!dlg) return; dlg.hidden=true; document.documentElement.style.overflow=''; }
+
+  function score(item, terms){
+    var t=item.t.toLowerCase(), g=(item.g||'').toLowerCase(), u=item.u.toLowerCase(), s=0;
+    for(var i=0;i<terms.length;i++){
+      var w=terms[i];
+      if(t===w) s+=120;
+      else if(t.indexOf(w)===0) s+=70;
+      else if(t.indexOf(' '+w)>-1) s+=45;
+      else if(t.indexOf(w)>-1) s+=25;
+      else if(u.indexOf(w)>-1) s+=12;
+      else if(g.indexOf(w)>-1) s+=8;
+      else return -1;
+    }
+    s -= Math.min(t.length,60)/12;   /* prefer the shorter, more exact title */
+    return s;
+  }
+  function run(v){
+    var terms=v.toLowerCase().trim().split(/\s+/).filter(Boolean);
+    if(!idx){ res.innerHTML='<p class="sdlg__empty">Loading…</p>'; return; }
+    if(!terms.length){
+      rows=[]; sel=-1;
+      res.innerHTML='<p class="sdlg__empty">Try a city, a county, a postal code, a school district, or a question.</p>';
+      cnt.textContent=idx.length.toLocaleString()+' pages'; return;
+    }
+    var out=[];
+    for(var i=0;i<idx.length;i++){ var sc2=score(idx[i],terms); if(sc2>=0) out.push([sc2,idx[i]]); }
+    out.sort(function(a,b){return b[0]-a[0];});
+    rows=out.slice(0,40).map(function(x){return x[1];});
+    sel=rows.length?0:-1;
+    cnt.textContent = out.length ? out.length.toLocaleString()+(out.length>40?' matches, showing 40':' match'+(out.length>1?'es':'')) : 'no matches';
+    if(!rows.length){ res.innerHTML='<p class="sdlg__empty">Nothing matched. Try fewer words.</p>'; return; }
+    res.innerHTML = rows.map(function(r,i){
+      return '<a class="sres" role="option" id="sres-'+i+'" aria-selected="'+(i===0)+'" href="'+BASE+r.u+'">'
+        + '<span class="sres__t">'+r.t.replace(/</g,'&lt;')+'</span>'
+        + '<span class="sres__g">'+(r.g||'').replace(/</g,'&lt;')+'</span></a>';
+    }).join('');
+  }
+  function move(d){
+    if(!rows.length) return;
+    var els=res.querySelectorAll('.sres');
+    if(sel>-1 && els[sel]) els[sel].setAttribute('aria-selected','false');
+    sel=(sel+d+rows.length)%rows.length;
+    els[sel].setAttribute('aria-selected','true');
+    els[sel].scrollIntoView({block:'nearest'});
+  }
+  if(q){
+    var deb;
+    q.addEventListener('input',function(){ clearTimeout(deb); deb=setTimeout(function(){run(q.value);},70); });
+    q.addEventListener('keydown',function(e){
+      if(e.key==='ArrowDown'){e.preventDefault();move(1);}
+      else if(e.key==='ArrowUp'){e.preventDefault();move(-1);}
+      else if(e.key==='Enter'&&sel>-1&&rows[sel]){e.preventDefault();location.href=BASE+rows[sel].u;}
+    });
+  }
+  var sbtn=document.getElementById('searchbtn'); if(sbtn) sbtn.addEventListener('click',openS);
+  var msbtn=document.getElementById('msearchbtn'); if(msbtn) msbtn.addEventListener('click',openS);
+  var sx=document.getElementById('sx'); if(sx) sx.addEventListener('click',closeS);
+  if(dlg) dlg.addEventListener('click',function(e){ if(e.target===dlg) closeS(); });
+  addEventListener('keydown',function(e){
+    var tag=(e.target.tagName||'').toLowerCase();
+    var typing = tag==='input'||tag==='textarea'||tag==='select'||e.target.isContentEditable;
+    if(!dlg) return;
+    if(!dlg.hidden && e.key==='Escape'){ e.preventDefault(); closeS(); return; }
+    if(dlg.hidden && !typing && (e.key==='/' || ((e.metaKey||e.ctrlKey) && e.key==='k'))){ e.preventDefault(); openS(); }
+  });
+  /* warm the index when the pointer reaches the header */
+  if(hdr) hdr.addEventListener('mouseenter',loadIdx,{once:true});
+
+  /* ---- reading progress + reveal --------------------------------------- */
   var p=document.getElementById('prog');
   if(p)addEventListener('scroll',function(){
     var h=document.documentElement,max=h.scrollHeight-h.clientHeight;
